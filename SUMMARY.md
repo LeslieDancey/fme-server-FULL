@@ -2,4 +2,5 @@
 
 * [Welcome](README.md)
    * [Introduction](introduction.md)
+   * Course Details
 
