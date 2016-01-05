@@ -9,4 +9,5 @@
 * [Introduction to FME Server](introduction_to_fme_server.md)
    * [What is FME Server?](what_is_fme_server.md)
    * [FME Server Roles](fme_server_roles.md)
+   * FME Server Architecture
 
