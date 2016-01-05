@@ -43,3 +43,66 @@ Services are key items of functionality on FME Server. They are the different me
 **Repositories**
 
 As you know, repositories are a place to store and categorize workspaces. Each role can be given different permissions for each and every repository.
+
+**Components**
+
+Components are different pieces of workspace functionality – Readers, Writers, and Transformers – that can be controlled through security settings.
+
+For example, you may wish to prevent a particular role from running workspaces on Server using the FMEServerJobSubmitter transformer.
+
+**Applications**
+
+Applications are the different ways in which FME Server can be accessed. For example, it’s possible to control access to the FME Server Web Interface for a specific role.
+
+Each security policy can be set for a particular role, meaning it is applied to all users who are assigned to that role. If one user needs a specific set of security settings, different to any other user in that role, then you simply create a new role to apply to them.
+
+**Other Security Functions**
+
+FME Security can be fully integrated with both Active Directory and Integrated Windows Authentication (IWA). The FME Server Administrators Guide explains how this can be achieved.
+
+**Encryption**
+
+FME Server also allows Secure Sockets Layer (SSL) connections in order to encrypt transaction data. This is most important for ensuring sensitive log in information is not exposed and is particularly important when you are using Active Directory.
+
+Again, the FME Server Administrators Guide explains the steps needed to implement this. In brief the process consists of two steps:
+• Modify web service URLs to use HTTPS instead of HTTP
+• Enable SSL on the web and/or application server.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Judge GIS says...</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+‘I am the law! The FMESuperUser role is the high court of FME Server
+and is granted all permissions on all security settings. What’s more,
+these permissions cannot be revoked, unset, or appealed against!
+So, be sure not to assign accounts to the FMESuperUser role unless you
+really, really mean for them to be given that degree of power.’
+</span>
+</td>
+</tr>
+</table>
+
+Follow these steps to inspect different security settings.
+
+**1) Connect to Server – 1**
+
+As in Exercise 1a, connect to the FME Server web user interface in your web browser.
+
+If you are already logged in then log out using the tool in the top-right of the interface:
+
+Now try to log in using the default guest account (Username:guest, Password: guest).
+
+The log in will fail because – by default – this account does not have permission to access the web user interface:
+
+**2) Connect to Server – 2**
+
+Now log in using the default administrator account (Username: admin, Password: admin).
+
+For the purposes of this exercise the account needs to be assigned to a role with permission to manage security. By default only the fmeadmin role has this capability, and the only account assigned to that role is admin.
