@@ -15,5 +15,5 @@
    * [Troubleshooting for Administrators](troubleshooting_for_administrators.md)
    * [Module Review](module_review1.md)
 * [Running Workspaces on FME Server](running_workspaces_on_fme_server.md)
-   * FME Workbench and FME Server
+   * [FME Workbench and FME Server](fme_workbench_and_fme_server.md)
 
