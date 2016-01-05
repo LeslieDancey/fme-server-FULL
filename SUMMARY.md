@@ -10,4 +10,5 @@
    * [What is FME Server?](what_is_fme_server.md)
    * [FME Server Roles](fme_server_roles.md)
    * [FME Server Architecture](fme_server_architecture.md)
+   * Deploying FME Server
 
