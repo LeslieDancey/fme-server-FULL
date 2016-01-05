@@ -2,5 +2,5 @@
 
 * [Welcome](README.md)
    * [Introduction](introduction.md)
-   * Course Details
+   * [Course Details](course_details.md)
 
