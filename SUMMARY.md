@@ -12,5 +12,5 @@
    * [FME Server Architecture](fme_server_architecture.md)
    * [Deploying FME Server](deploying_fme_server.md)
    * [FME Server Security](fme_server_security.md)
-   * Troubleshooting for Administrators
+   * [Troubleshooting for Administrators](troubleshooting_for_administrators.md)
 
