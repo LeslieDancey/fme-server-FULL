@@ -105,4 +105,22 @@ The log in will fail because – by default – this account does not have permi
 
 Now log in using the default administrator account (Username: admin, Password: admin).
 
-For the purposes of this exercise the account needs to be assigned to a role with permission to manage security. By default only the fmeadmin role has this capability, and the only account assigned to that role is admin.
+For the purposes of this exercise the account needs to be assigned to a role with permission to manage security. By default only the fmeadmin role has this capability, and the only account assigned to that role is *admin*.
+
+**3) Open Security Settings**
+
+Click Manage on the top right side, and select Administration then Security:
+
+If you don’t see an option for Security then the account you have chosen does not have permissions to access this functionality.
+
+Click on the Role Policies tab and choose the role fmeguest
+
+**4) Examine Security**
+
+Examine the different security options for the fmeguest role. Notice, for example, that it can read the Samples repository, and run a workspace within it, but cannot publish a new workspace and cannot delete an existing one.
+
+At the bottom of the list of security settings, locate Manage Repositories. Put a checkmark to allow the guest role to carry out this function.
+
+Scroll to the top of the list of security settings. Put a checkmark to allow the guest role to use the FME Server Web User Interface. **Also put a checkmark to allow the guest role to use ‘Web Connection, REST Service’.**
+
+**Click the Apply Changes button to apply the new security policies!**
