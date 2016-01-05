@@ -4,4 +4,5 @@
    * [Introduction](introduction.md)
    * [Course Details](course_details.md)
    * [About the Manual](about_the_manual.md)
+   * Course Resources
 
