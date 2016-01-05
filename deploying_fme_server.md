@@ -56,3 +56,16 @@ This will open the web user interface login screen for the FME Server being used
 In the User Login dialog, enter a username and password for your FME Server account. A common username/password combination for a training installation is admin/admin
 
 Click the Arrow button.
+
+**3) Examine User Interface.**
+
+Examine the user interface. This is your primary method for interacting with FME Server. Notice that the bottom-left corner shows which version and build of FME Server is being used by this instance:
+
+**4) Examine Repositories**
+
+Let's look first at the system's repositories. Click the Run Workspace button.
+
+This will open a page that shows a list of the available FME Server workspace repositories. A repository is a method for storing and categorizing workspaces. It holds a number of workspaces in the same way that a folder holds a number of files.
+
+In this case there will be a repository for Samples and one for Utilities.
+Click on the Samples repository. A list of workspaces in that repository is shown. These are workspaces that have been loaded into FME Server and are available to run.
