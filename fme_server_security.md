@@ -124,3 +124,20 @@ At the bottom of the list of security settings, locate Manage Repositories. Put 
 Scroll to the top of the list of security settings. Put a checkmark to allow the guest role to use the FME Server Web User Interface. **Also put a checkmark to allow the guest role to use ‘Web Connection, REST Service’.**
 
 **Click the Apply Changes button to apply the new security policies!**
+
+**5) Create New User**
+
+Now let’s create a new user account. Click on the Users tab and then on the New button:
+
+When prompted, create a new user with the following parameters:
+
+User Name: WebGuest
+Full Name: Web Interface Account
+Roles: fmeguest
+Password: WebGuest1
+
+**6) Log In as New User**
+
+Now log out of the web user interface and log in again using the WebGuest account. You should be able to log in, because the setting was changed to allow guest users access to the web user interface.
+
+Notice that the menu options will be severely restricted for this user! Only the Home, Workspaces and Help items will be available, because repositories are the only feature this role is allowed to manage.
