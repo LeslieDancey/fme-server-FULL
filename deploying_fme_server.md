@@ -69,3 +69,28 @@ This will open a page that shows a list of the available FME Server workspace re
 
 In this case there will be a repository for Samples and one for Utilities.
 Click on the Samples repository. A list of workspaces in that repository is shown. These are workspaces that have been loaded into FME Server and are available to run.
+
+**5) Examine Jobs**
+
+Now click Manage, then Jobs. This tool shows you a list of jobs that have been run on the system, as well as jobs that are currently queued or currently running.
+
+Jobs and Repositories are the two items that you will use for basic FME Server use and administration.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“You might have noticed that the start menu has a tool for adding
+sample workspaces; but if you used the express installation then
+you don’t need to use this – everything is installed automatically.
+</span>
+</td>
+</tr>
+</table>
