@@ -18,7 +18,7 @@
    * [FME Workbench and FME Server](fme_workbench_and_fme_server.md)
    * [Workspace Management](workspace_management.md)
    * [Source Data Management](source_data_management.md)
-   * Running a Workspace on FME Server
+   * [Running a Workspace on FME Server](running_a_workspace_on_fme_server.md)
    * Translation Results
    * Troubleshooting for Administrators
    * Module Review
