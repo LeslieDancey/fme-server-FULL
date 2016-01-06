@@ -19,5 +19,4 @@
    * [Workspace Management](workspace_management.md)
    * [Publishing a Workspace](publishing_a_workspace.md)
    * [Republishing a Workspace](republishing_a_workspace.md)
-   * Downloading a Workspace
 
