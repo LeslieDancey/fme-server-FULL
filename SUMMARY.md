@@ -18,5 +18,5 @@
    * [FME Workbench and FME Server](fme_workbench_and_fme_server.md)
    * [Workspace Management](workspace_management.md)
    * [Publishing a Workspace](publishing_a_workspace.md)
-   * Repositories
+   * [Repositories](repositories.md)
 
