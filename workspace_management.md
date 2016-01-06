@@ -135,3 +135,25 @@ For interested experts, the FME Server core communicates with the database via J
 The contents of this database should never be edited directly.
 
 Querying the database is permissible, although extracting repository information is more commonly achieved using the REST API.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Police Chief Webb-Mapp says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Security in FME Server is very important, and
+never more so than for repositories.
+For each repository you create, check the
+security settings. If you don’t then end-users
+may not get access to the repository!”
+</span>
+</td>
+</tr>
+</table>
+
