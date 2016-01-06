@@ -281,3 +281,16 @@ The next dialog prompts you to choose a repository in which to store the workspa
 For this exercise we’ll create a new repository by clicking the New button. When prompted enter the name Training.
 
 Click OK to close the Create New Repository dialog. Uncheck the box labeled Upload Data Files, and then click Next to continue the wizard.
+
+**5. Publish Workspace (Step 3)**
+
+In the final screen of the wizard we can register the workspace for use with various services.
+
+Select the Job Submitter service as this is the only service we are using for now and click Publish to complete publishing the workspace.
+
+After a workspace is transferred to Server, the log window displays a message reporting which workspace has been published to which repository and for which services.
+
+In this exercise, the workspace Exercise2a.fmw has been published to the Training repository for use in the Job Submitter service.
+
+Congratulations! You have now created a workspace and published it to FME Server.
+
