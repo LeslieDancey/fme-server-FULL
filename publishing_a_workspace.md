@@ -27,12 +27,7 @@ The Job Submitter service allows FME Server to run a workspace as-is. This is th
 
 Job submission is ideal for testing workspaces, and for running large-scale and batch translations that make use of the server process queue.
 
-**Republishing a Workspace**
 
-Once a workspace has been published, the republish tool becomes active.
-Further updates to the workspace (within the same session) can then be uploaded with a single click:
-
-The same parameters are used as before. If changes need to be made to these parameters, then the full publishing wizard should be used.
 
 **Downloading a Workspace**
 
