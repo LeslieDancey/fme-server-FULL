@@ -68,3 +68,25 @@ More information on this functionality is proved in Chapter 3 under Data Upload.
 </tr>
 
 </table>
+
+In this exercise we’ll upload some GeoTiff files as Resources on FME Server. This will make them available for use by a workspace, including the one published in Exercise 2a.
+
+**1. Open Web User Interface**
+
+In a web browser open the FME Server Web User Interface, as we did in Chapter 1, by entering http://<servername>/fmeserver
+
+Alternatively use the Windows shortcut Start > Programs > FME Server 2015.1 > Web User Interface.
+
+Login in using the credentials provided by the instructor, by default these will be
+
+User admin
+
+Password admin
+
+**2. Create New Resources Folder**
+
+Under Manage, click Resources, on the upper right menu.
+
+Click on the Data Folder in the Resource Management dialog.
+
+Click New Folder to create a new subfolder inside Data. Name the folder Orthophotos.
