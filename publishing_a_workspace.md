@@ -43,3 +43,40 @@ The downloading wizard begins with the same connection dialog as the publishing 
 The user is then prompted for a location to save the workspace. The default is <user>/FME/My FME Server Workspaces. The workspace – and resources – are then downloaded.
 
 Once downloaded, the workspace is automatically opened within Workbench for editing.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-info-circle fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">TIP</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+To avoid entering the same parameters every time a connection is made, set the
+parameters, click the Defaults button, and select ‘Save as My Defaults'. Now these
+parameter values will be used automatically every time the connection dialog is opened.
+</span>
+</td>
+</tr>
+</table>
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Besides workspaces, it’s also possible to publish/download FME custom
+transformers and custom formats to/from a server repository.”
+</span>
+</td>
+</tr>
+</table>
