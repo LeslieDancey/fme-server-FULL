@@ -247,3 +247,37 @@ fails in Workbench, it won’t suddenly work on FME Server!”
 </td>
 </tr>
 </table>
+
+As a further test, run the workspace a second time but this time using Run > Prompt and Run.
+This action prompts you to select the source and destination datasets, instead of simply using those defined in the workspace.
+
+Select a different file this time (say, 08-09-NO.tif) and open the output to prove that the contents are different to before.
+
+**NB:** If you missed setting a Dynamic Schema in step 1, you can either recreate the workspace (it will only take a minute) or – if you know how – open the Reader feature type properties dialog and set a merge filter.
+
+**3. Publish Wizard (Step 1)**
+
+Workspaces are published to FME Server using a wizard.
+
+Choose File > Publish to FME Server from the menubar (or select the same tool on the toolbar).
+
+In the first dialog of the wizard you are prompted to enter connection parameters to FME Server.
+
+Enter the parameters provided by your training instructor.
+
+In most cases the parameters will be as follows:
+
+FME Server URL: http://localhost
+
+Username: admin
+Password: admin
+
+Click Next to continue. If the credentials are correct a connection will be made and you will move on to the next dialog in the wizard.
+
+**4. Publish Workspace (Step 2)**
+
+The next dialog prompts you to choose a repository in which to store the workspace.
+
+For this exercise we’ll create a new repository by clicking the New button. When prompted enter the name Training.
+
+Click OK to close the Create New Repository dialog. Uncheck the box labeled Upload Data Files, and then click Next to continue the wizard.
