@@ -17,5 +17,4 @@
 * [Running Workspaces on FME Server](running_workspaces_on_fme_server.md)
    * [FME Workbench and FME Server](fme_workbench_and_fme_server.md)
    * [Workspace Management](workspace_management.md)
-   * [Publishing a Workspace](publishing_a_workspace.md)
 
