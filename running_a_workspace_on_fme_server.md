@@ -24,3 +24,18 @@ For example, here the user can specify where the source data is available:
 If data was made available using Resources functionality, then the user could choose the Browse option to search for and select it:
 
 Once the parameters are set, click the Run Workspace button to complete the process.
+
+**Running the Job Submitter using a URL**
+
+All job requests to an FME Server are a variation on an HTTP request. This makes running a workspace via a URL very simple, provided you know what form the request will take.
+
+The easiest way to find that URL is through the workspace services in the FME Server web interface.
+
+Notice that the service configuration dialog includes a section labelled “Developer Information”.
+Once expanded, an example URL and example form are displayed.
+
+The URL shown uses a HTTP GET request whereas the HTML form uses a HTTP POST request.
+
+This information is a useful tool for building your own web applications that access FME Server services, because you can copy the HTTP request and embed it on your own website or application.
+
+You could also embed the URL or form into an email, or paste the URL directly into a web browser.
