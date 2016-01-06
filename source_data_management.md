@@ -90,3 +90,21 @@ Under Manage, click Resources, on the upper right menu.
 Click on the Data Folder in the Resource Management dialog.
 
 Click New Folder to create a new subfolder inside Data. Name the folder Orthophotos.
+
+**3. Upload Image Data**
+
+Still in the Resources Management dialog, select the newly created Orthophotos folder. Click Upload.
+
+Click Browse. A file browser window will open. Browse to the folder
+
+C:\FMEData2015\Data\Orthophotos and select the following GeoTiff files for upload.
+
+08-09-NO.tif
+08-09-LM.tif
+06-07-NO.tif
+06-07-LM.tif
+
+**NB:** If you wish, you can choose all of the files; but they total 184mb in size, so uploads and downloads will take longer.
+
+Click Open and the selected files will be uploaded.
+Congratulations! You have uploaded a series of source datasets, which are now available for use in any FME Server Workspace.
