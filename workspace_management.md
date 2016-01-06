@@ -294,3 +294,17 @@ In this exercise, the workspace Exercise2a.fmw has been published to the Trainin
 
 Congratulations! You have now created a workspace and published it to FME Server.
 
+**Advanced Task**
+
+Open the FME Server Web User Interface in a web browser and log in using the same connection parameters as you published the workspace with.
+
+Click Security on the main menu to open security settings, and then click the Object Policies tab.
+
+Locate the Training repository in the list of security objects. You should see that the roles allowed to make use of it is restricted to the one(s) to which the publisher’s account belongs.
+
+In this case the user was admin, which is associated with the fmeadmin role. Therefore only an administrator will be able to make use of the repository that we have just created.
+
+Click on the repository object to open its security policies. Add the fmeguest role so that users with a guest account can access this repository.
+
+If you created a guest account (WebGuest) in Exercise 1b, then log out and log in again using that account, to prove that guests now have access to the repository.
+
