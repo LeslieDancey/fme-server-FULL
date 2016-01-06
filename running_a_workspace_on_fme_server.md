@@ -121,10 +121,8 @@ Now we have both a workspace and data on the server, we can run the workspace to
 
 **1. Browse to the Workspace**
 
-Open the Web User Interface in a web browser (if it isn’t already) and click Workspaces on the
-upper right-hand menu. A list of available repositories now appears.
-Click on the Training repository in the list; this was the repository we created when we published
-the workspace. This will cause a list of available workspaces in that repository to be displayed.
-Now click on your workspace, Exercise2a.fmw, and then Job
-Submitter. The Job Submitter parameters will open, which will allow
-the selection of specific source files.
+Open the Web User Interface in a web browser (if it isn’t already) and click Workspaces on the upper right-hand menu. A list of available repositories now appears.
+
+Click on the Training repository in the list; this was the repository we created when we published the workspace. This will cause a list of available workspaces in that repository to be displayed.
+
+Now click on your workspace, Exercise2a.fmw, and then Job Submitter. The Job Submitter parameters will open, which will allow the selection of specific source files.
