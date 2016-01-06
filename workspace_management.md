@@ -204,3 +204,22 @@ FMEData2015\Workspaces\ServerAuthoring\Exercise2a-­‐Complete.fmw</td>
 </tr>
 
 </table>
+
+This simple exercise will refresh your memory on FME Workbench and demonstrate how to publish a workspace. In this scenario you are an FME user working for a company producing and selling airphotos. You want to publish a workspace to FME Server to translate GeoTiff datasets to JPEG.
+
+**1) Generate Workspace**
+
+In the FME Workbench start screen, select the option to Generate Workspace
+
+Alternatively you can select File > New > Generate from the menubar or use the shortcut Crtrl + G.
+
+When prompted, set up the workspace using the following parameters:
+
+Reader Format GeoTIFF (Geo-referenced Tagged Image File Format)
+Reader Dataset C:\FMEData2015\Data\Orthophotos\06-07-LM.tif
+Writer Format JPEG (Joint Photographic Experts Group)
+Writer Dataset C:\FMEData2015\Output\Training
+
+Before clicking OK, select the option for Dynamic Schema at the bottom of the dialog.
+
+This will allow the workspace to process any GeoTiff file, not just the one originally chosen.
