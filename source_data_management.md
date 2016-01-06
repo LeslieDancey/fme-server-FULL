@@ -25,3 +25,46 @@ The various resource functions are:
 - Move
 
 More information on this functionality is proved in Chapter 3 under Data Upload.
+
+<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 2B </span>
+</td>
+<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
+<span style="color:white;font-size:x-large;font-weight: bold">Uploading to a Resource Folder</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Scenario</td>
+<td style="border: 1px solid darkorange">Airphoto Data Vendor</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
+<td style="border: 1px solid darkorange">GeoTiff Orthophotos</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
+<td style="border: 1px solid darkorange">Uploading data to be used by the previous workspace</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
+<td style="border: 1px solid darkorange">FME Server resource management</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Starting Workspace</td>
+<td style="border: 1px solid darkorange">n/a</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Finished Workspace</td>
+<td style="border: 1px solid darkorange">n/a</td>
+</tr>
+
+</table>
