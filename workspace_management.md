@@ -39,6 +39,7 @@ parameters.”
 </tr>
 </table>
 
+**Publishing a Workspace**
 
 Once a workspace has been authored it is “published” to FME Server. A workspace is published using a simple wizard interface that connects using the FME Server REST API.
 
@@ -118,3 +119,19 @@ transformers and custom formats to/from a server repository.”
 </td>
 </tr>
 </table>
+
+**Repositories**
+
+Repositories are storage facilities for FME Server workspaces.
+
+You can think of each repository as being like a folder on a file-system. Like a folder, it stores workspace files. Also like a folder, access rights can be granted to individuals and groups.
+
+Repositories can be accessed through the web user interface using the Run Workspace button on the main menu:
+
+Although the workspaces are stored on the file-system (C:\apps\FMEServer\Server\repository) information about each workspace is stored in an internal database within FME Server.
+
+For interested experts, the FME Server core communicates with the database via JDBC over TCP/IP.
+
+The contents of this database should never be edited directly.
+
+Querying the database is permissible, although extracting repository information is more commonly achieved using the REST API.
