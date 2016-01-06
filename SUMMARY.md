@@ -20,4 +20,5 @@
    * [Publishing a Workspace](publishing_a_workspace.md)
    * Republishing a Workspace
    * Downloading a Workspace
+   * Repositories
 
