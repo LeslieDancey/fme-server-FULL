@@ -18,4 +18,5 @@
    * [FME Workbench and FME Server](fme_workbench_and_fme_server.md)
    * [Workspace Management](workspace_management.md)
    * Source Data Management
+   * Running a Workspace on FME Server
 
