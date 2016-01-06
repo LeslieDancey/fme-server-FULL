@@ -107,4 +107,5 @@ C:\FMEData2015\Data\Orthophotos and select the following GeoTiff files for uploa
 **NB:** If you wish, you can choose all of the files; but they total 184mb in size, so uploads and downloads will take longer.
 
 Click Open and the selected files will be uploaded.
+
 Congratulations! You have uploaded a series of source datasets, which are now available for use in any FME Server Workspace.
