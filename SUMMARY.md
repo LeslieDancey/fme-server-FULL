@@ -32,4 +32,5 @@
    * Coordinate System Selection
    * Format Selection
    * Layer Selection and Handling
+   * Geographic Selection
 
