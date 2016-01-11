@@ -160,3 +160,24 @@ When complete, browse to the Resources (Manage > Resources) section of the inter
 **Congratulations!**
 
 You have now run a workspace with the Job Submitter service on FME Server.
+
+**Advanced Task**
+
+You can submit a job to the FME Server Job Submitter Service or any other service using a URL or by posting a form. The syntax is provided in the Configure page for your workspace, so let’s give it a try.
+
+**1. Browse to the Workspace**
+
+Browse to your workspace again in the Web User Interface using Workspaces > Training > Exercise2a.fmw > Job Submitter.
+At the bottom-left corner of the page, expand Developer Information
+
+**2. Run the Workspace**
+
+The Developer Info button opens up a section that shows how to run the workspace using a Direct URL (as a HTTP GET) and a web form (using HTTP POST).
+
+Copy the Direct URL and paste it into the address bar of a new tab in your browser. Press enter to activate the URL and run the workspace.
+
+You may be prompted to authenticate again in which case enter the same user and password as you did in Exercise 2a. The job will be submitted synchronously again although the results page will look different since it was not submitted via the web interface.
+
+**3. Change Parameters**
+
+Examine how the published parameters are set in the URL and try to change one of the source GeoTiff file names (to different ones in your Resources) before running the workspace again.
