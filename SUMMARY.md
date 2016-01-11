@@ -30,4 +30,5 @@
    * Data Download Service
    * Miscellaneous Published Parameters
    * Coordinate System Selection
+   * Format Selection
 
