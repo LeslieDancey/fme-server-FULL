@@ -73,3 +73,7 @@ service, many services, or no services at all.
 </td>
 </tr>
 </table>
+
+When a workspace is not registered against a service, you can run it as a regular translation using the FME Server Console or the FMEServerJobSubmitter transformer in Workbench.
+
+When a workspace is registered against a service, it can be used by that service and it’s still available for use as a regular translation using FME Server Console.
