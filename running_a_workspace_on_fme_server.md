@@ -153,11 +153,10 @@ Once you have selected some image files, click Run Workspace at the bottom-right
 
 The browser will wait until the job completes because it was submitted in mode known as synchronous. After a short time a Success message will appear with links to view or download the FME log file.
 
-5. Locate Output
-When complete, browse to the Resources (Manage > Resources) section of the interface and
-look in the Output folder. You should see the result of the translation written to this folder.
-Congratulations!
-You have now run a
-workspace with the Job
-Submitter service on
-FME Server.
+**5. Locate Output**
+
+When complete, browse to the Resources (Manage > Resources) section of the interface and look in the Output folder. You should see the result of the translation written to this folder.
+
+**Congratulations!**
+
+You have now run a workspace with the Job Submitter service on FME Server.
