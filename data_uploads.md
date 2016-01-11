@@ -34,3 +34,11 @@ The Data Upload Service allows data and other resource files to be uploaded to F
 Files can be uploaded through the FME Server Publishing Wizard, when a workspace is published from Workbench to FME Server:
 
 Clicking the Select Files button opens a dialog that shows what data is being uploaded.
+
+The upload of these files can be turned on and off as required, and you can also change the location to which data is uploaded – either to a repository (Data Upload) or to a Resource Folder – by clicking the Change Location button.
+
+The other way to upload data with this service is through the configure dialog when running a workspace.
+
+Use the File Upload section to upload the data, then choose Select From Recently Uploaded Files to select which files should be assigned to which published parameter:
+
+Be aware that data uploading with this service is only available with the chosen workspace. Also, the data is stored only temporarily and will be deleted in – by default – 30 minutes time.
