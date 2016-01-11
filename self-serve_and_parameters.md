@@ -61,3 +61,14 @@ coffee.”
 </td>
 </tr>
 </table>
+
+**Parameter Uses in FME Server**
+
+For self-serve systems, parameters can be used to set:
+
+• Coordinate System Selection
+• Feature Types (Layers) to Read
+• Geographic Area (Bounding Box or Area of Interest)
+• Any other Reader, Writer, or Transformer parameters
+
+With FME Server, the key to successful workspace authoring is flexibility. Workspaces need to be flexible to allow end-users to make choices without seeing all of the complexity of the workspace or the data behind it. Parameters are one way to accomplish this.
