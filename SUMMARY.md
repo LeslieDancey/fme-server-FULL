@@ -31,4 +31,5 @@
    * Miscellaneous Published Parameters
    * Coordinate System Selection
    * Format Selection
+   * Layer Selection and Handling
 
