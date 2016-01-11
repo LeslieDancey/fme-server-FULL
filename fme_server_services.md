@@ -55,3 +55,21 @@ Be aware of the Edit button to the right of each service.
 Every service has a set of parameters available that determine how a workspace will be run with that service.
 
 These parameters include ones for notification topics to trigger on completion of the workspace.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-info-circle fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">TIP</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+It’s important to understand that a workspace may be registered against one
+service, many services, or no services at all.
+</span>
+</td>
+</tr>
+</table>
