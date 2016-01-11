@@ -22,4 +22,5 @@
    * [Translation Results](translation_results.md)
    * [Troubleshooting for Administrators](troubleshooting_for_administrators2.md)
    * [Module Review](module_review2.md)
+* Self-Serve with FME Server
 
