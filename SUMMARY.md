@@ -28,4 +28,5 @@
    * Self-Serve and Parameters
    * Data Uploads
    * Data Download Service
+   * Miscellaneous Published Parameters
 
