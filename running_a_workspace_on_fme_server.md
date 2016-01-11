@@ -146,3 +146,18 @@ Locate the Destination Dataset parameter and click the Browse tab if it is not a
 Ensure that the Output folder is selected as the output location.
 
 *NB: Writing to a resource folder like this is important for when there is no local or network path for FME to write the output to.*
+
+**4. Run the Workspace**
+
+Once you have selected some image files, click Run Workspace at the bottom-right of the configure page. This will submit the job with your parameters and an FME Engine will run the workspace.
+
+The browser will wait until the job completes because it was submitted in mode known as synchronous. After a short time a Success message will appear with links to view or download the FME log file.
+
+5. Locate Output
+When complete, browse to the Resources (Manage > Resources) section of the interface and
+look in the Output folder. You should see the result of the translation written to this folder.
+Congratulations!
+You have now run a
+workspace with the Job
+Submitter service on
+FME Server.
