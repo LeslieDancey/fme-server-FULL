@@ -31,3 +31,14 @@ lot of the functionality you are likely to need.’
 </td>
 </tr>
 </table>
+
+**Available Services**
+
+FME Server includes the following services:
+
+Remember that services can communicate in both directions. Transformation services – for example Data Download – are primarily Self-Serve tools for Server to deliver data to the end user.
+
+Utility services can be described as “helper” services. They interact with FME Server to assist in menial tasks such as uploading data or providing token security. In most cases these are facilities that an author or developer will be using in a way that’s hidden from the user.
+
+The Notification Service is used for passing short messages into and out of FME Server. Incoming messages notify FME Server to take some action, whereas outgoing messages alert an end-user (or system) that some sort of event has occurred.
+
