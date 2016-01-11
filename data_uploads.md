@@ -42,3 +42,11 @@ The other way to upload data with this service is through the configure dialog w
 Use the File Upload section to upload the data, then choose Select From Recently Uploaded Files to select which files should be assigned to which published parameter:
 
 Be aware that data uploading with this service is only available with the chosen workspace. Also, the data is stored only temporarily and will be deleted in – by default – 30 minutes time.
+
+**Resources Folders**
+
+Resource Folders are a more permanent and flexible way to upload data and resources to FME Server. Similarly to the Data Upload Service, files can be uploaded at the same time as a workspace.
+
+When editing the resource info (in the publishing wizard, under Select Files, Change Location) you would simply choose to upload the files as a shared resource (left). One other requirement is to select a location on the resources file system.
+
+Another way to use this functionality is to use the Resources tool in the FME Server Web User Interface (below). Here you can upload, download, copy, move, and delete files; plus manage folders too.
