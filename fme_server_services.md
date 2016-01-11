@@ -60,7 +60,7 @@ These parameters include ones for notification topics to trigger on completion o
 <tr>
 <td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
 <i class="fa fa-info-circle fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
-<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">TIP</span>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">IMPORTANT</span>
 </td>
 </tr>
 
