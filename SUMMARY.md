@@ -34,4 +34,5 @@
    * Layer Selection and Handling
    * Geographic Selection
    * Other Self-Serve Services
+   * Troubleshooting for Administrators
 
