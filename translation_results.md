@@ -66,3 +66,12 @@ There is also a button labelled Download Log where you can download the file if 
 </tr>
 
 </table>
+
+Having run a workspace, now let’s look at the job history details. This will confirm the workspace ran to completion and produced the correct results.
+
+**1) Examine the Job History**
+
+Click on Manage then Jobs in the Web User Interface.
+This will open a page with three tabs: Completed, Queued, and Running.
+
+There should not be any queued or running jobs so click on the Completed tab to see a view of the latest completed jobs. Each job item represents one run of one workspace and includes details such a Status, Workspace Name etc.
