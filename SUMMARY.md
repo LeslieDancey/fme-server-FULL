@@ -23,7 +23,7 @@
    * [Troubleshooting for Administrators](troubleshooting_for_administrators2.md)
    * [Module Review](module_review2.md)
 * [Self-Serve with FME Server](self-serve_with_fme_server.md)
-   * Self-Serve with FME Server
+   * [Self-Serve with FME Server](self-serve_with_fme_server2.md)
    * FME Server Services
    * Self-Serve and Parameters
    * Data Uploads
