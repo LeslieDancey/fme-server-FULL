@@ -151,12 +151,10 @@ Workflow Options Single Merged Feature Type
 
 The workflow option is important because setting a merged feature type allows any TIFF file to enter the workspace. If it is not set then only the original file could ever be read.
 
-3. Add RasterPropertyExtractor
-To test the quality of the incoming data we need to first extract some information about it. So, add
-a RasterPropertyExtractor transformer. You can do this by clicking on a clear part of the canvas
-and typing RasterPropertyExtractor. Drag a connection from the Reader to the transformer.
+**3. Add RasterPropertyExtractor**
+
+To test the quality of the incoming data we need to first extract some information about it. So, add a RasterPropertyExtractor transformer. You can do this by clicking on a clear part of the canvas and typing RasterPropertyExtractor. Drag a connection from the Reader to the transformer.
+
 This will extract information about the incoming data and store it as attributes.
-If you wish, you may connect a
-Logger transformer and run the
-workspace, just to see what the
-attributes look like.
+
+If you wish, you may connect a Logger transformer and run the workspace, just to see what the attributes look like.
