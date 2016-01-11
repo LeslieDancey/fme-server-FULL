@@ -24,7 +24,7 @@
    * [Module Review](module_review2.md)
 * [Self-Serve with FME Server](self-serve_with_fme_server.md)
    * [Self-Serve with FME Server](self-serve_with_fme_server2.md)
-   * FME Server Services
+   * [FME Server Services](fme_server_services.md)
    * Self-Serve and Parameters
    * Data Uploads
    * Data Download Service
