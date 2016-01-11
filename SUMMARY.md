@@ -35,4 +35,5 @@
    * Geographic Selection
    * Other Self-Serve Services
    * Troubleshooting for Administrators
+   * Module Review
 
