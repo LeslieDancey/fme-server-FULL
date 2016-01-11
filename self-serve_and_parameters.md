@@ -26,3 +26,18 @@ the process will be like.”
 </td>
 </tr>
 </table>
+
+In the hierarchy of different translation components, each different level of the hierarchy has a set of parameters that belong to it.
+
+So there are:
+
+• Workspace Parameters
+• Reader Parameters
+• Writer Parameters
+• Feature Type Parameters
+
+**Published Parameters**
+
+Published Parameters are those that have been exposed to the end-user, so they can set the values themselves. They are also called “User Parameters”.
+
+In a self-serve application, published parameters are important to let the end user control how the data is served in terms of style and structure.
