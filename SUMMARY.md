@@ -25,7 +25,7 @@
 * [Self-Serve with FME Server](self-serve_with_fme_server.md)
    * [Self-Serve with FME Server](self-serve_with_fme_server2.md)
    * [FME Server Services](fme_server_services.md)
-   * Self-Serve and Parameters
+   * [Self-Serve and Parameters](self-serve_and_parameters.md)
    * Data Uploads
    * Data Download Service
    * Miscellaneous Published Parameters
