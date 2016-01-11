@@ -42,3 +42,16 @@ Utility services can be described as “helper” services. They interact with F
 
 The Notification Service is used for passing short messages into and out of FME Server. Incoming messages notify FME Server to take some action, whereas outgoing messages alert an end-user (or system) that some sort of event has occurred.
 
+**Workspaces and Services**
+
+When a workspace is published to FME Server it can be registered with a particular service.
+
+The Job Submitter service is automatically selected in the FME Server publishing wizard, whenever a workspace is published, but many other services are available too.
+
+Registering a workspace with a service makes the workspace available for use in that service although, as you’ll discover, not every workspace is capable of being used by every service.
+
+Be aware of the Edit button to the right of each service.
+
+Every service has a set of parameters available that determine how a workspace will be run with that service.
+
+These parameters include ones for notification topics to trigger on completion of the workspace.
