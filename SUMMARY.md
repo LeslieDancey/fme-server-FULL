@@ -25,4 +25,5 @@
 * [Self-Serve with FME Server](self-serve_with_fme_server.md)
    * Self-Serve with FME Server
    * FME Server Services
+   * Self-Serve and Parameters
 
