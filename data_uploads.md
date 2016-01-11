@@ -26,3 +26,11 @@ In FME, there are two forms of data upload: the Data Upload Service and the Reso
 The Data Upload Service allows data to be uploaded to a particular workspace in a particular repository. The data is held temporarily for the workspace to be run.
 
 The Resource Folders allow data to be uploaded to a folder for use by any workspace in any repository. This upload is persistent and the data held there for as long as it required.
+
+**The Data Upload Service**
+
+The Data Upload Service allows data and other resource files to be uploaded to FME Server.
+
+Files can be uploaded through the FME Server Publishing Wizard, when a workspace is published from Workbench to FME Server:
+
+Clicking the Select Files button opens a dialog that shows what data is being uploaded.
