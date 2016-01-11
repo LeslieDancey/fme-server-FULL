@@ -50,3 +50,25 @@ Resource Folders are a more permanent and flexible way to upload data and resour
 When editing the resource info (in the publishing wizard, under Select Files, Change Location) you would simply choose to upload the files as a shared resource (left). One other requirement is to select a location on the resources file system.
 
 Another way to use this functionality is to use the Resources tool in the FME Server Web User Interface (below). Here you can upload, download, copy, move, and delete files; plus manage folders too.
+
+**Resource Upload**
+
+To upload data simply click on a folder and then choose the Upload option:
+
+The upload tool gives you the option to either upload a set of files, or an entire folder of data:
+
+To upload a folder of data requires use of a browser – for example Google Chrome – that has folder upload capabilities. At the time of writing, neither Firefox nor IE has this ability.
+
+**New Folder**
+
+The New Folder tool creates a new folder or sub-folder in the Resources mechanism.
+
+For example, to create a subfolder in the Data folder simply click on Data and then click
+
+**New Folder:**
+
+You are prompted to enter a name for the new folder.
+Enter a name, click OK, and the folder is created.
+Besides those methods, folders in the Resources mechanism can be accessed – or created – in the server’s file system.
+
+For example, here are folders in C:\apps\FMEServer on a Windows file system.
