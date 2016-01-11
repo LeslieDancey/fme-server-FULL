@@ -158,3 +158,19 @@ To test the quality of the incoming data we need to first extract some informati
 This will extract information about the incoming data and store it as attributes.
 
 If you wish, you may connect a Logger transformer and run the workspace, just to see what the attributes look like.
+
+**4. Add Tester**
+
+Now we will add a Tester transformer to test whether the properties of the data are a match for what we require.
+
+Do this by clicking on the RasterPropertyExtractor transformer and typing Tester. Then select Tester from the drop-down list of transformers.
+
+The workspace will now look like this:
+
+**5. Set Tester Parameters**
+
+Click on the red cogwheel icon on the Tester to open its parameters dialog.
+
+In the dialog double-click in the Left Value field. From the drop-down list select Attribute Value > _num_bands. This attribute tells us how many bands are in the source data:
+
+Set the Operator field to equals (=) and type the number 3 into the Right Value field:
