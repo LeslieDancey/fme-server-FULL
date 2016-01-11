@@ -27,4 +27,5 @@
    * FME Server Services
    * Self-Serve and Parameters
    * Data Uploads
+   * Data Download Service
 
