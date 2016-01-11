@@ -41,3 +41,23 @@ So there are:
 Published Parameters are those that have been exposed to the end-user, so they can set the values themselves. They are also called “User Parameters”.
 
 In a self-serve application, published parameters are important to let the end user control how the data is served in terms of style and structure.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Chef Bimm says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Published Parameters are like
+when you are given control of the
+machine to make your own
+coffee.”
+</span>
+</td>
+</tr>
+</table>
