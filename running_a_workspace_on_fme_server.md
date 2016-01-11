@@ -126,3 +126,23 @@ Open the Web User Interface in a web browser (if it isn’t already) and click W
 Click on the Training repository in the list; this was the repository we created when we published the workspace. This will cause a list of available workspaces in that repository to be displayed.
 
 Now click on your workspace, Exercise2a.fmw, and then Job Submitter. The Job Submitter parameters will open, which will allow the selection of specific source files.
+
+**2. Select Source Data from Resources**
+
+The Configure page allows you to set any published parameters for a workspace, in the same way that using “Prompt and Run” would in FME Workbench.
+
+Parameters which represent file sources are given special treatment to allow you to either Browse to a Resource dataset, Upload data or Specify Location of the data as a path on the file system.
+
+Having already uploaded data to a Resources folder, we will browse to those files.
+
+Select Browse Resources and expand the Data and Orthophotos folders. Select all or some of your files. The other parameters can be left with their defaults.
+
+**3. Select Destination Folder**
+
+Once the source data is selected, we can now select an output location in the Resources folder.
+
+Locate the Destination Dataset parameter and click the Browse tab if it is not already highlighted. Select the Data folder, click New Folder and create a new folder called Output.
+
+Ensure that the Output folder is selected as the output location.
+
+*NB: Writing to a resource folder like this is important for when there is no local or network path for FME to write the output to.*
