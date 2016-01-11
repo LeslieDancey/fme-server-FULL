@@ -174,3 +174,26 @@ Click on the red cogwheel icon on the Tester to open its parameters dialog.
 In the dialog double-click in the Left Value field. From the drop-down list select Attribute Value > _num_bands. This attribute tells us how many bands are in the source data:
 
 Set the Operator field to equals (=) and type the number 3 into the Right Value field:
+
+Now repeat that process to test for _spacing_x = 1 and _spacing_y = 1
+
+Finally, set the Pass Criteria parameter to All Tests (AND). If you don’t then the incoming data will pass even if only one aspect of it is correct.
+
+Click OK to close the dialog. We now have a test to ensure the incoming data has the correct number of bands and the correct resolution.
+
+**6. Add AttributeCreator Transformers**
+
+We now have to decide how we are going to communicate the results of the translation to the end-user. The most effective way is perhaps to respond with a web page describing the results.
+
+To generate some very simple HTML, we’ll use an AttributeCreator transformer. So add an AttributeCreator transformer and connect it to the Tester:Failed port:
+
+Now open the parameters for the AttributeCreator. Enter an attribute name of text_line_data (the name is important as we’ll see shortly) and for the value click the […] button to open a text editor.
+
+In the text editor, just enter some simple HTML such as:
+
+<html>
+<p>Data QA Test Failure</p>
+</html>
+
+Click OK and then OK again to close the dialogs.
+
