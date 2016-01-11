@@ -72,3 +72,18 @@ Enter a name, click OK, and the folder is created.
 Besides those methods, folders in the Resources mechanism can be accessed – or created – in the server’s file system.
 
 For example, here are folders in C:\apps\FMEServer on a Windows file system.
+
+**Benefits**
+
+Resource Folders are more permanent because the data is not automatically deleted after a set time. Instead all uploaded files reside there until removed by a user/administrator.
+
+Additionally, Resource Folders are more flexible for a number of reasons.
+
+Firstly, you can access the files and manage them through a file system on the server. This is useful in itself, but it also allows the data to be accessed through UNC paths, which the Data Upload service does not.
+
+Secondly, Resource Folders can be used for more than data upload.
+
+It’s also possible to write the results of a translation to a resource folder, as in this example. You would just set the output dataset parameter to a resource folder.
+
+Also, files inside a Resource Folder can be managed using the REST API too, with POST and GET functions for downloading files, creating folders, and copying files (for example). This gives control over these resources to any developer who wishes to create their own web applications.
+
