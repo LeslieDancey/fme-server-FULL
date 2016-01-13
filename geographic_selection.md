@@ -244,3 +244,25 @@ Tester operator to equals (=).
 For the Right Value double-click in the field, click the drop-down arrow, then select User Parameter > AreaOfInterest.
 
 Click OK to close the dialog.
+
+**6. Add Clipper**
+
+We now have a test to check where the neighborhood is the one chosen by the user, but we haven’t yet done anything with the result. We must use the chosen neighborhood as a boundary to clip the raster output.
+
+Add a Clipper transformer.
+
+Connect it up by connecting the Tester Passed port to the Clipper input port. Connect the VectorOnRasterOverlayer Raster port to the Clipper Clippee input port.
+
+The Clipper:Inside port can be connected to the output feature type and any existing connector deleted. The workspace will now look like this:
+
+**7. Delete Parameter**
+
+As with the Roads data, the end-user does not need to see a parameter for the neighborhoods source, so locate the source Google Earth KML parameter and delete it.
+
+**8. Test Run Workspace**
+
+Save the workspace as Exercise3f.fmw Run the workspace using Run > Prompt and Run in FME Workbench.
+
+For the source GeoTIFF files you’ll want to select all of the files to ensure the neighborhood is covered fully.
+
+Then select a neighborhood to view the data; West End or Downtown are good to use.
