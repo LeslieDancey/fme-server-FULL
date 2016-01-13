@@ -99,3 +99,61 @@ This could be used in a sequence like this, where the translation is triggered w
 To use XML you could also just publish the geometry parameter in a Creator transformer.
 
 With these methods, a web mapping interface that allows the user to define their own custom area of interest can pass it to the FME workspace to be used as the area of interest in a Clipper or FeatureReader.
+
+<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 3F </span>
+</td>
+<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
+<span style="color:white;font-size:x-large;font-weight: bold">Data
+Download
+Area
+of
+Interest</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Scenario</td>
+<td style="border: 1px solid darkorange">Airphoto Data Vendor</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
+<td style="border: 1px solid darkorange">GeoTiff Orthophotos</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
+<td style="border: 1px solid darkorange">Improve
+the
+data
+download
+service</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
+<td style="border: 1px solid darkorange">Selection
+of
+data
+via
+geographic
+area</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Starting Workspace</td>
+<td style="border: 1px solid darkorange">C:\FMEData2015\Workspaces\ServerAuthoring\Exercise3f-­‐Begin-­‐
+DataDownload.fmw</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Finished Workspace</td>
+<td style="border: 1px solid darkorange">C:\FMEData2015\Workspaces\ServerAuthoring\Exercise3f-­‐Complete-­‐
+DataDownload.fmw</td>
+</tr>
+
+</table>
