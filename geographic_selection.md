@@ -41,3 +41,21 @@ This, of course, is done using published parameters. The parameters in the works
 • bboxSouth
 
 If given these names, both OGC services and the KML Network Link service can make use of these parameters. In fact, if you have used an OGC web service, or a KML Network Link service (as below), you might have noticed how these are used to pass information back to the workspace:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Using reader parameters like this ensures the data is reduced in size at
+the earliest possible opportunity and so gives a better performance.”
+</span>
+</td>
+</tr>
+</table>
