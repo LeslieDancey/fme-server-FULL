@@ -153,3 +153,24 @@ When you check the Feature Types To Read parameter, you’ll notice that the opt
 Your users do not need to know where the MicroStation file is coming from, nor do they need to see a parameter for it. By deleting the parameter, we’ll remove it from the user’s view and ensure it gets uploaded to FME Server.
 
 In the Navigator pane, browse to User Parameters > Published Parameters > SourceDataset_DGNV8, right-click the parameter and choose the option to delete.
+
+**7. Publish to FME Server**
+
+Save the workspace as Exercise3e.fmw.
+Select File > Publish to FME Server from the menubar to start the publishing process.
+
+Fill in the connection details and credentials as usual and then click Next to continue.
+
+In the next dialog select Training as the repository to publish to. However, do not yet click Next. Instead, click on the button labelled Select Files.
+
+The Resources dialog shows what resources – such as source data – are being uploaded to FME Server along with the workspace.
+Remember all GeoTIFF orthophotos are already uploaded, so uncheck those files from the list.
+
+However, we do want to upload the MicroStation DGN file. In this case we’ll upload it to a repository (available only to this workspace) rather than to a Resources folder where it would be open to everyone.
+
+Check to see where the file will be uploaded. If the dialog already says repository, then all is OK.
+Else click the button to change the location and set it to repository.
+
+When you click OK, a warning message will alert you to the fact that the GeoTIFF files are being referenced but not uploaded. That’s OK – we know the files already exist on the server – so simply click OK to dismiss the dialog.
+
+Then click Next to pass on to the final dialog of the publishing wizard.
