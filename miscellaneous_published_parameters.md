@@ -125,3 +125,28 @@ Optional No (Unchecked)
 Prompt Image Resolution (1-50)
 
 Default Value 5
+
+**2. Apply Parameter to RasterResampler**
+
+Having created the parameter we can get input from the end-user, but, as-yet, the workspace isn’t doing anything with that input. We must now apply the input to the transformers.
+
+Click the cog wheel icon to open the parameters dialog for the RasterResampler transformer.
+
+Notice that the X and Y Cell Spacing is currently hard-coded as 5.
+
+Click the drop down arrow to the right of the X Cell Spacing parameter. Choose User Parameter > Resolution. This will apply the Resolution parameter you just created to this transformer.
+
+Repeat the action for the Y Cell Spacing parameter.
+
+The transformer X/Y Cell parameters will now look like this:
+
+**3. Create a Published Parameter for JPEG Compression**
+
+Now we will create a parameter for the user to control the JPEG compression amount.
+
+Open the properties dialog of the AirphotoMosiac feature type.
+Click on the Format Parameters tab.
+
+Click the drop down arrow beside Compression Level and choose User Parameter > Create User Parameter.
+
+Change the prompt to JPEG Compression (0-100) and leave the default at 28.
