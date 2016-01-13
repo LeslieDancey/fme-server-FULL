@@ -155,3 +155,28 @@ Notice the Display Name column allows you to provide your users a description or
 Choose any of formats as the default and click OK to create the parameter.
 
 The following should now be the list of current published parameters:
+
+**8. Link the Custom Format Parameter**
+
+Now the format user parameter must be linked to the appropriate FME parameter.
+
+In the Navigator window, locate the Generic Writer and expand its list of parameters. Locate the parameter Output Format and right-click upon it. Choose Link to User Parameter:
+
+This will pop-up a list of user parameters. Select the newly created Format from the list.
+
+**9. Create a Coordinate System Parameter**
+
+Now we can create a parameter to control coordinate system.
+Once again in the Navigator window locate User Parameters and right-click to Add Parameter.
+
+Use the following settings for your new parameter:
+
+Type Choice with Alias
+
+Name CoordinateSystem
+
+Prompt Choose Coordinate System
+
+Published Yes
+
+Optional No
