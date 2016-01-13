@@ -219,3 +219,20 @@ MIME Type text/html
 Really the output dataset is irrelevant here as it will never be used. The MIME type is set by clicking the Parameters button and using the setting inside that dialog.
 
 Click OK and OK again to close the dialogs and add the new Writer.
+
+**9. Connect Writer**
+
+Connect the Writer into the workspace by dragging connections from the output ports of both AttributeCreator transformers:
+
+If you expand the text writer’s attribute list you’ll see it is expecting data to arrive in an attribute called text_line_data, which is why it was so important that the AttributeCreators create their attribute with that exact name.
+
+**10. Delete Existing Published Parameters**
+
+The workspace is now complete except for one thing, published parameters. Remember these are how the user is prompted to make a selection to control the translation.
+
+In this case we wish for the user to be given the chance to upload data, but not anything else.
+However, if you look in the Navigator window of Workbench you’ll see that some parameters in a workspace are published by default.
+
+The source parameter is great, as it will let the user upload a source dataset; but the other parameters are not required. They will confuse the user and have no effect on the translation.
+
+So delete these two parameters. You can either click them and press the delete key, or right-click them and select delete.
