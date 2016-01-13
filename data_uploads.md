@@ -256,3 +256,5 @@ Now – in the role of a data supplier – open the FME Server Web Interface in 
 Browse to the newly uploaded workspace (Workspaces > Training > Exercise3a.fmw) and click Data Streaming:
 
 In the configuration page, under File Upload select Browse and add the file C:\FMEData2015\Resources\Self-Serve\GoodData.tif. It will then be uploaded to FME Server and become available for use.
+
+This is the key part of the process: the ability for an end-user to upload data to process.
