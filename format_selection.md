@@ -115,3 +115,19 @@ In this dialog uncheck the Dynamic Properties parameter and then type AirphotoMo
 **5. Connect Feature Type**
 
 In the workspace, connect the new feature type to the RasterMosaicker Output port.
+
+**6. Create a Format Parameter**
+
+Now we’ve added a Generic format writer we should publish a parameter so that users can select the format to use. As in the previous example, right-click User Parameters in the Navigator window and select Add Parameter.
+
+Use the following settings for your new parameter:
+
+Type Choice with Alias
+
+Name Format
+
+Published Yes
+
+Optional No
+
+Prompt Choose Format
