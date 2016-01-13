@@ -103,3 +103,23 @@ A Subscription is created in the FME Server web interface under the Notification
 As with Publications, each Subscription is also tied to one (or more) Topics, and each Topic can be subscribed to by multiple Subscriptions.
 
 For example, a police headquarters might subscribe to the RoadConditions topic, to receive notifications on that subject. The local TV weather channel also subscribes to the RoadConditions topics, but in addition subscribes to WeatherEvent to hear about those particular events.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">InteropGeek68 says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“I subscribe to articles published on the Daily Interop web site
+according to their topic.
+For example, I subscribe to reports on technology and gaming,
+whereas my friend – InteropJock72 – subscribes to sports articles”
+</span>
+</td>
+</tr>
+</table>
