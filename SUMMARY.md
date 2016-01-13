@@ -27,7 +27,7 @@
    * [FME Server Services](fme_server_services.md)
    * [Self-Serve and Parameters](self-serve_and_parameters.md)
    * [Data Uploads](data_uploads.md)
-   * Data Download Service
+   * [Data Download Service](data_download_service.md)
    * Miscellaneous Published Parameters
    * Coordinate System Selection
    * Format Selection
