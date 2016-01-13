@@ -42,3 +42,16 @@ The application that opens a streamed file will depend on the MIME type and file
 The only Writers in FME with a MIME type setting are the TextLine (text file) and Data File Writers.
 
 This parameter only appears when the Writer is added, and (for example) it allows the workspace author to set a MIME type of HTML and therefore stream data directly into a web browser.
+
+**KML Network Link**
+
+A KML Network Link service is when the output from an FME Server translation is a simple KMZ (zipped KML) file that contains solely a network link to reference the workspace on the server.
+
+Whenever a KML browser (such as Google Earth) opens this dataset it follows the link, triggering FME Server to run the translation and return the true output data.
+
+Because Google Earth permits a refresh rate for network links, the translation can be re-run at a user-defined interval. This way the results are always as up-to-date as the chosen interval.
+
+Of course, in this scenario the output is never written to a permanent dataset; the resulting data is simply streamed to the browser, which writes it to a cache.
+
+As with other services, a workspace becomes available for use as a KML Network Link service when the author checks the KML Network Link checkbox in the FME Server Publishing Wizard.
+The edit button provides a whole series of different parameters that control the refresh rate when the data is opened in Google Earth.
