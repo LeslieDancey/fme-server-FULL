@@ -174,3 +174,21 @@ Else click the button to change the location and set it to repository.
 When you click OK, a warning message will alert you to the fact that the GeoTIFF files are being referenced but not uploaded. That’s OK – we know the files already exist on the server – so simply click OK to dismiss the dialog.
 
 Then click Next to pass on to the final dialog of the publishing wizard.
+
+**8. Register with Data Download Service**
+
+In the Register Services dialog check Data Download if it is not already.
+
+Click the Edit button and confirm that the Output Dataset for the service is set to your Generic Writer.
+
+Click OK to close the dialog and Publish to complete the wizard and publish the workspace.
+
+**9. Run Workspace on FME Server**
+
+In the Web User Interface run your workspace using the Data Download Service as if you are a user, as we have been doing in the previous exercises.
+
+Notice how the Feature Types to Read parameter is a selection parameter, like this:
+
+…letting the user select which roads layers (if any) they would like overlaid on the imagery.
+
+Congratulations: Your Data Download service now lets the end-user retrieve data with a selection of required layers.
