@@ -84,3 +84,18 @@ In that case the area can simply be read from the dataset and routed into the ap
 If the source contains a number of features, then a published parameter can be used for the enduser to identify the area they want and for FME to filter other features out.
 
 For example, this Self-Serve workspace uses a Clipper transformer to deliver only addresses that fall within a chosen postal code. The postal code is selected by the user through a published parameter. The Tester transformer filters out postal code boundaries that don’t match the user’s selection.
+
+**Ad Hoc Area of Interest**
+
+In the case that the area of interest is not a previously known shape – for example it is one defined entirely by the end user – then a different technique is needed.
+
+This scenario needs a published parameter through which a geometry string can be provided.
+The geometry could be, for example, either WKT (Well-Known Text) or XML.
+
+One simple method would be to use an AttributeCreator transformer and publish the Value part.
+
+This could be used in a sequence like this, where the translation is triggered with a Creator, the geometry string retrieved with the AttributeCreator, the attribute contents converted into true geometry with a GeometryReplacer, and then the real data read with a FeatureReader:
+
+To use XML you could also just publish the geometry parameter in a Creator transformer.
+
+With these methods, a web mapping interface that allows the user to define their own custom area of interest can pass it to the FME workspace to be used as the area of interest in a Clipper or FeatureReader.
