@@ -59,3 +59,28 @@ the earliest possible opportunity and so gives a better performance.”
 </td>
 </tr>
 </table>
+
+**Irregular Areas of Interest**
+
+An irregularly shaped area cannot be used as a clip boundary in a Reader’s parameters.
+However, it can be used to clip data using either a Clipper transformer or a FeatureReader transformer.
+
+The Clipper has an input port for the area of interest (Clipper) and one for the main dataset (Clippee).
+
+For example, here the portal will deliver only addresses that fall inside the boundary of the city of Vancouver:
+
+Here is the same result but using a FeatureReader transformer.
+
+The FeatureReader reads the main dataset directly, executing out one of any number of spatial filters.
+
+In general the FeatureReader is a better choice than a Clipper when using a database with a spatial index, or when the spatial predicate is other than a simple CONTAINS function.
+
+**Existing Area of Interest**
+
+The main issue with an irregular area of interest is how to define that area. In some cases, the feature is already defined as a known shape, such as an administrative or municipal boundary, and already exists in a spatial dataset.
+
+In that case the area can simply be read from the dataset and routed into the appropriate input port of the Clipper/FeatureReader transformer.
+
+If the source contains a number of features, then a published parameter can be used for the enduser to identify the area they want and for FME to filter other features out.
+
+For example, this Self-Serve workspace uses a Clipper transformer to deliver only addresses that fall within a chosen postal code. The postal code is selected by the user through a published parameter. The Tester transformer filters out postal code boundaries that don’t match the user’s selection.
