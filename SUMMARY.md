@@ -38,7 +38,7 @@
    * [Module Review](module_review3.md)
 * [Real-Time with FME Server](real-time_with_fme_server.md)
    * [Real-Time with FME Server](real-time_with_fme_server2.md)
-   * The Notification Service
+   * [The Notification Service](the_notification_service.md)
    * An Introduction to Email Notifications
    * Notifications and Workspaces
    * Notifications Protocols
