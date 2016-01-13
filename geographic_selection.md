@@ -266,3 +266,29 @@ Save the workspace as Exercise3f.fmw Run the workspace using Run > Prompt and Ru
 For the source GeoTIFF files you’ll want to select all of the files to ensure the neighborhood is covered fully.
 
 Then select a neighborhood to view the data; West End or Downtown are good to use.
+
+**9. Publish to FME Server**
+
+Save the workspace as Exercise3f.fmw.
+Select File > Publish to FME Server from the menubar to start the publishing process.
+
+Fill in the connection details and credentials as usual and then click Next to continue.
+
+In the next dialog select Training as the repository to publish to and, as before, click on the button labelled Select Files.
+
+Ensure that both the MicroStation roads dataset, and the KML neighborhoods dataset, are being uploaded to the repository, but that the Orthophotos are not.
+
+Again, a warning message will alert you to the fact that the GeoTIFF files are being referenced
+but not uploaded. Again, it’s fine to simply click OK to dismiss the dialog.
+
+Register the workspace with the Data Download service again.
+
+**10. Run Workspace on FME Server**
+
+In the Web User Interface, run your workspace using the Data Download Service as if you are a user, as we have been doing in the previous exercises.
+
+Notice the neighborhood is available as a dropdown list.
+
+Pick a neighborhood – and enough source files to cover it – and run the workspace.
+
+Congratulations: Your Data Download service now lets the end-user retrieve data within a set geographic area.
