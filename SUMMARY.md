@@ -33,7 +33,7 @@
    * [Format Selection](format_selection.md)
    * [Layer Selection and Handling](layer_selection_and_handling.md)
    * [Geographic Selection](geographic_selection.md)
-   * Other Self-Serve Services
+   * [Other Self-Serve Services](other_self-serve_services.md)
    * Troubleshooting for Administrators
    * Module Review
 
