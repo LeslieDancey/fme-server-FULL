@@ -28,7 +28,7 @@
    * [Self-Serve and Parameters](self-serve_and_parameters.md)
    * [Data Uploads](data_uploads.md)
    * [Data Download Service](data_download_service.md)
-   * Miscellaneous Published Parameters
+   * [Miscellaneous Published Parameters](miscellaneous_published_parameters.md)
    * Coordinate System Selection
    * Format Selection
    * Layer Selection and Handling
