@@ -133,3 +133,23 @@ This opens a dialog that demonstrates the special nature of this parameter. Howe
 Check the parameter marked Fixed List. Then click the dropdown menu labelled List and choose Add from Current Dataset. Select all of the available feature types in the dataset and click OK.
 
 This will basically create a list of layers for the end-user to select from.
+
+**4. Set up Layer Groups**
+
+As a final step in modifying this parameter, check the parameter labelled Use Alternate Display Name. This allows you to enter groups and aliases.
+
+Edit the Display Names and give all the minor roads the name Secondary so that they become a group for the user.
+
+Select Arterial as the default and click OK to close the dialog.
+
+**5. Run Workspace in FME Workbench**
+
+As always, confirm the parameters work as expected – and that the vector on raster overlay is working – by running the workspace using Run > Prompt and Run in FME Workbench.
+
+When you check the Feature Types To Read parameter, you’ll notice that the options are Arterial (the default), Collector, and Secondary – the groups that you just created.
+
+**6. Delete the MicroStation Source Dataset Parameter**
+
+Your users do not need to know where the MicroStation file is coming from, nor do they need to see a parameter for it. By deleting the parameter, we’ll remove it from the user’s view and ensure it gets uploaded to FME Server.
+
+In the Navigator pane, browse to User Parameters > Published Parameters > SourceDataset_DGNV8, right-click the parameter and choose the option to delete.
