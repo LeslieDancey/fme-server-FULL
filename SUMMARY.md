@@ -29,7 +29,7 @@
    * [Data Uploads](data_uploads.md)
    * [Data Download Service](data_download_service.md)
    * [Miscellaneous Published Parameters](miscellaneous_published_parameters.md)
-   * Coordinate System Selection
+   * [Coordinate System Selection](coordinate_system_selection.md)
    * Format Selection
    * Layer Selection and Handling
    * Geographic Selection
