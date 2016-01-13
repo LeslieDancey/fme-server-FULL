@@ -32,7 +32,7 @@
    * [Coordinate System Selection](coordinate_system_selection.md)
    * [Format Selection](format_selection.md)
    * [Layer Selection and Handling](layer_selection_and_handling.md)
-   * Geographic Selection
+   * [Geographic Selection](geographic_selection.md)
    * Other Self-Serve Services
    * Troubleshooting for Administrators
    * Module Review
