@@ -106,3 +106,26 @@ DataStreaming.fmw</td>
 </tr>
 
 </table>
+
+Any exercises we’ve completed up until now could also be used with a simple Data Streaming service, just as easily as a Data Download service, and with very little editing.
+
+This would allow customers to preview their downloads in a browser.
+
+**1. Open Starting Workspace**
+
+Start Workbench and open the starting workspace. Alternatively open the workspace from any of the previous exercises.
+
+**2. Add Writer**
+
+For data streaming it’s important that we have a workspace with a JPEG writer, not Generic.
+Even if the Generic writer writes a JPEG file, it can’t be streamed because the MIME type is unknown.
+
+So, use Writers > Add Writer from the menubar. When prompted add a Writer as follows:
+
+Writer Format JPEG (Joint Photographic Experts Group)
+
+Writer Dataset C:\FMEData2015\Output\Training
+
+Ensure Copy from Reader file definition is selected. Click OK to close the dialog. Open the Feature Type Properties dialog, change the Raster File Name to AirphotoPreview, and make sure that the fanout option is unchecked.
+
+Click the Format Parameters tab and check the parameter for World File Generation. It needs to be set to “No”. If it is not “No” then multiple files will be output and streaming will fail.
