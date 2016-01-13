@@ -31,7 +31,7 @@
    * [Miscellaneous Published Parameters](miscellaneous_published_parameters.md)
    * [Coordinate System Selection](coordinate_system_selection.md)
    * [Format Selection](format_selection.md)
-   * Layer Selection and Handling
+   * [Layer Selection and Handling](layer_selection_and_handling.md)
    * Geographic Selection
    * Other Self-Serve Services
    * Troubleshooting for Administrators
