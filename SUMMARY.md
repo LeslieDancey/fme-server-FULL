@@ -42,4 +42,5 @@
    * An Introduction to Email Notifications
    * Notifications and Workspaces
    * Notifications Protocols
+   * Message Streaming
 
