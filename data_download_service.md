@@ -144,3 +144,33 @@ In this scenario, we’ll be writing a single (mosaicked) output file. This is a
 So, click the cog wheel icon on the Writer feature type to open the properties dialog.
 
 In this dialog uncheck the Dynamic Properties parameter and then type AirphotoMosaic for the Raster File Name.
+
+**6. Publish the Workspace – Step 1**
+
+Save your workspace as Exercise3b.fmw
+
+Start the “Publish to FME Server” process by using the toolbar button or File > Publish to FME Server from the menubar.
+
+Enter the connection and credential settings and click Next. If you cannot remember them, or didn’t save them as your defaults, refer to Exercise 2a for the required values.
+
+For the repository select the Training repository you created in Exercise 2a. Click Next
+
+**7. Publish the Workspace – Step 2**
+
+In the last pane of the publish Wizard check the Data Download Service so that the workspace can be run with this service. You can also leave the Job Submitter Service checked so the workspace can be run via either service.
+
+The default Data Download settings can be used but click the Edit button to review the possible settings anyway.
+
+The Output Dataset parameter is very important if there is more than one Writer in the workspace, as it specifies which is to be output for download. In this case it should be set to the JPEG writer.
+
+Click OK to close this dialog and then Publish to finish publishing the workspace.
+
+**8. Access the Data Download Service**
+
+Now your role switches to that of an end-user who wants to download some data.
+
+Log in to the FME Server Web User Interface. Use the menus and dialogs to navigate to Repositories > Training > Exercise3b.fmw
+
+Notice that you can now run the workspace through either the Job Submitter or the Data Download Service.
+
+Click Data Download.
