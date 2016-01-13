@@ -93,3 +93,23 @@ DataDownload.fmw</td>
 </tr>
 
 </table>
+
+The task here is to update the current data download service to deliver a hybrid image of aerial photo and map data. We’ll do this by adding a vector data Reader to the workspace and burning (stamping) it into the raster.
+
+**1. Start Workbench**
+
+Start FME Workbench (if necessary). Open the workspace from Exercise 3d (or the start workspace for this exercise).
+
+Select Readers > Add Reader from the menubar and add a new Reader for some roads data with the following parameters:
+
+Reader Format Bentley MicroStation Design (V8)
+
+Reader Dataset C:\FMEData2015\Data\Transportation\RoadsDGN.dgn
+
+Workflow Options Single Merged Feature Type
+
+Click Parameters to open the parameters dialog.
+
+In the dialog check Group Elements by Level Names and click OK. This will ensure data is added with the correct level names (not numbers).
+
+Click OK again to add the Reader. You will see a single source feature type which will allow any layer to pass through.
