@@ -197,3 +197,25 @@ In the text editor, just enter some simple HTML such as:
 
 Click OK and then OK again to close the dialogs.
 
+**7. Duplicate AttributeCreator**
+
+Having created HTML for a failure we now need to do the same for a successful test. The simplest way to do this is select the existing AttributeCreator and press Ctrl+D to duplicate it (alternatively you can use Right Click > Duplicate).
+
+Connect the new transformer tothe Tester:Passed port.
+
+Now open the parameters dialog and change the message inside from Failure to Success.
+
+**8. Add Writer**
+
+To output HTML in a way that will open automatically, we need to stream it through a Text File writer. So, select Writers > Add Writer from the menubar.
+
+When prompted create a Writer as follows:
+
+Reader Format Text File
+Reader Dataset C:\FMEData2015\Output\Training\output.html
+Parameters
+MIME Type text/html
+
+Really the output dataset is irrelevant here as it will never be used. The MIME type is set by clicking the Parameters button and using the setting inside that dialog.
+
+Click OK and OK again to close the dialogs and add the new Writer.
