@@ -110,3 +110,29 @@ parameters and so best practice suggests we remove them.
 Browse the Navigator window and expand the section labelled User Parameters - Published Parameters. Right-click and delete the Feature Types to Read parameter.
 
 Only keep the published parameter for the source dataset.
+
+**3. Add a RasterResampler Transformer**
+
+Now we can add transformers to resample and mosaic the source data.
+
+Click on the connection between the Reader and Writer feature types. Start typing “resampler”. A list of matching transformers will appear. When you see the RasterResampler transformer then select it.
+
+The transformer will now be added into the workspace.
+
+Click the red cog wheel icon on the RasterResampler to open the parameters dialog.
+
+Set the following values to resample the images from 1 metre resolution to 5 metres.
+
+Size Specification: Cell Size
+
+X Cell Spacing: 5
+
+Y Cell Spacing: 5
+
+Interpolation Type: Nearest Neighbor
+
+**4. Add a RasterMosaicker Transformer**
+
+Now repeat step 3, but this time adding a RasterMosaicker transformer between the RasterResampler and the Writer feature type.
+
+Open the parameters dialog as before, but now just click OK to accept the default values.
