@@ -150,3 +150,44 @@ Click on the Format Parameters tab.
 Click the drop down arrow beside Compression Level and choose User Parameter > Create User Parameter.
 
 Change the prompt to JPEG Compression (0-100) and leave the default at 28.
+
+**4. Test your Workspace in FME Workbench**
+
+Save the workspace as Exercise3c.fmw.
+
+As workspaces get more complex it is always a good idea to test them first in FME Desktop before publishing to FME Server. Use the menu Run - Prompt and Run (or Cntrl+R) to see the parameters which are now available. You should see your new parameters.
+
+Click the file browse button and select some neighboring image files, for example 06-07-LM.tif and 06-07-NO.tif.
+
+Enter some extreme values for your new parameters so it will be obvious that the output has been changed, for example:
+
+Image Resolution 50
+
+Compression Level 100
+
+Click OK to run the workspace.
+
+Check the output; you should have a single very low resolution, poor quality image.
+
+If you ever need to change the parameter prompts or defaults then browse to the parameters in the Navigator window and right-click the one you want to change. Select Edit Definition and this will open a dialog in which to update the definition.
+
+**5. Publish the Workspace**
+
+Use the publish wizard to publish your workspace to FME Server. You don’t need to upload any data (assuming you uploaded it in the earlier exercises), but be sure you check Data Download Service in the last window.
+
+**6. Run Data Download Using New Parameters**
+
+Acting as a user now, visit the Web User Interface and navigate to your workspace: Workspaces > Training > Exercise3c.fmw > Data Download
+
+Notice your new parameters are now shown automatically in the web form.
+
+As before, select some or all of the source image files under Browse Resources.
+
+Scroll down and enter reasonable values for the Image Resolution and the JPEG Compression.
+Click Run Workspace on the bottom of the form.
+
+**7. Download the Output**
+
+The Success page will appear with a link to download the data. Download and extract the zip file contents to ensure it includes an image based on the specifications you entered in the web form.
+
+Congratulations! You now have a Data Download Service where your customers can choose the resolution and compression for imagery they want to access.
