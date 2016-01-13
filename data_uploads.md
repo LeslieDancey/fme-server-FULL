@@ -266,3 +266,26 @@ Notice there are no other published parameters as there is nothing else we wish 
 Now click the Run Workspace button. The translation should run to completion and a brief message given to alert us to the status of the dataset.
 
 You can now run the same process on the file BadData.tif to prove that it fails the tests.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says...</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+‘Yes, the output from this exercise is sinfully basic, but we’re not here to
+teach you HTML! Now you know how to create a Data Upload service
+from the FME Server side you can apply your web skills to producing a
+more aesthetic result – and even a custom form for uploading the data.
+Additionally, you can add extra tests and functionality inside the FME
+workspace in order to carry out more QA. The GeometryValidator
+transformer is a great solution for dealing with vector data.’
+</span>
+</td>
+</tr>
+</table>
