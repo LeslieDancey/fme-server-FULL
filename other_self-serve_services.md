@@ -129,3 +129,27 @@ Writer Dataset C:\FMEData2015\Output\Training
 Ensure Copy from Reader file definition is selected. Click OK to close the dialog. Open the Feature Type Properties dialog, change the Raster File Name to AirphotoPreview, and make sure that the fanout option is unchecked.
 
 Click the Format Parameters tab and check the parameter for World File Generation. It needs to be set to “No”. If it is not “No” then multiple files will be output and streaming will fail.
+
+**3. Publish the Workspace to the Data Streaming Service**
+
+Connect the newly created Feature Type to the RasterMosaicker Output port. Then select File > Publish to FME Server from the menubar to publish the workspace.
+
+Save the workspace (as Exercise3g.fmw) and publish it to the Training repository again; but this time, register it with both the Data Download and Data Streaming services.
+
+For the Data Download service, click the Edit button to make sure the Output Dataset associated with the service is the Generic Writer.
+
+For the Data Streaming service, click the Edit button to make sure the Output Dataset associated with the service is the JPEG Writer, and only the JPEG writer.
+
+**4. Run the Workspace in the Data Streaming Service**
+
+Acting as a user now, go to the Web User Interface and navigate to your workspace: Workspaces > Training > Exercise3g.fmw > Data Streaming
+
+Enter some parameters. Data Download specific parameters like destination coordinate system and output format will not apply when streaming.
+
+Click Run Workspace on the bottom of the form.
+
+After a short time, the resulting image will appear on the webpage. Your browser automatically displays the image because FME Server provided the MIME type image/jpeg in the headers of the page it returned.
+
+Hopefully you see how this service could be incorporated into your self-server data sharing solution, so users can preview the data they want to download at lower resolutions first.
+
+Congratulations! You have now created a Data Streaming service for your customers.
