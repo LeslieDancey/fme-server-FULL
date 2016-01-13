@@ -40,4 +40,5 @@
    * Real-Time with FME Server
    * The Notification Service
    * An Introduction to Email Notifications
+   * Notifications and Workspaces
 
