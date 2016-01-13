@@ -94,3 +94,19 @@ DataDownload.fmw</td>
 </tr>
 
 </table>
+
+This exercise involves making orthophoto data available through a Data Download service. We will also mosaic the various files together and resample them to a lower resolution.
+
+**1. Start Workbench**
+
+Start Workbench (if necessary) and open the starting workspace for this Exercise. You will be familiar with it as it is the same workspace we created in Chapter 2.
+
+**2. Delete Existing Published Parameters**
+
+Some parameters in a workspace are published by default. This lets the user select the output
+dataset (for example) when the workspace is run. However, we don’t need to let the user set any
+parameters and so best practice suggests we remove them.
+
+Browse the Navigator window and expand the section labelled User Parameters - Published Parameters. Right-click and delete the Feature Types to Read parameter.
+
+Only keep the published parameter for the source dataset.
