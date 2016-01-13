@@ -123,3 +123,25 @@ whereas my friend – InteropJock72 – subscribes to sports articles”
 </td>
 </tr>
 </table>
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">IMPORTANT</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+This is text as spoken by a person from the city of Interopolis
+<br>Although the actions seem odd in regard to the name – Publications receive
+messages, Subscriptions send them – it is correct. The name refers to the Client, not
+the Server.
+So FME Server receives a Publication because the client is publishing it.
+Likewise, FME Server sends a Subscription because the client is subscribing to it.
+</span>
+</td>
+</tr>
+</table>
