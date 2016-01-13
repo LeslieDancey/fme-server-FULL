@@ -37,3 +37,60 @@ in the form of a URL’
 </td>
 </tr>
 </table>
+
+<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 3B </span>
+</td>
+<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
+<span style="color:white;font-size:x-large;font-weight: bold">Data
+Download</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Scenario</td>
+<td style="border: 1px solid darkorange">Airphoto Data Vendor</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
+<td style="border: 1px solid darkorange">GeoTiff Orthophotos</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
+<td style="border: 1px solid darkorange">Create
+a
+data
+download
+service</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
+<td style="border: 1px solid darkorange">Authoring
+for
+and
+Using
+the
+Data
+Download
+Service</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Starting Workspace</td>
+<td style="border: 1px solid darkorange">C:\FMEData2015\Workspaces\ServerAuthoring\Exercise3b-­‐Begin-­‐
+DataDownload.fmw</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Finished Workspace</td>
+<td style="border: 1px solid darkorange">C:\FMEData2015\Workspaces\ServerAuthoring\Exercise3b-­‐Complete-­‐
+DataDownload.fmw</td>
+</tr>
+
+</table>
