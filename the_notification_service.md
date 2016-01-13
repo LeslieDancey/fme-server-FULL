@@ -71,3 +71,23 @@ All Publications are linked to one (or more) Topics, so that when an incoming me
 Because a Publication can be linked to multiple Topics, each incoming message can trigger multiple actions to occur. Additionally, multiple Publications can trigger the same topic.
 
 For example, a lightning strike sensor might publish to the topics WeatherEvent and AircraftAlerts, whereas a flood sensor might publish to the topics WeatherEvent and RoadConditions.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Daily Interop Reporter, Chad Pugh-Litzer says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“It’s like when I write a news article. I publish the article to the Daily
+Interop web site, tagged with a number of topics to describe it.
+For example, a report about a soccer team’s tax return would be filed
+under both ‘Financial’ and ‘Sports’ because it relates to both.”
+</span>
+</td>
+</tr>
+</table>
