@@ -35,5 +35,5 @@
    * [Geographic Selection](geographic_selection.md)
    * [Other Self-Serve Services](other_self-serve_services.md)
    * [Troubleshooting for Administrators](troubleshooting_for_administrators3.md)
-   * Module Review
+   * [Module Review](module_review3.md)
 
