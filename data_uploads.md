@@ -236,3 +236,23 @@ However, if you look in the Navigator window of Workbench you’ll see that some
 The source parameter is great, as it will let the user upload a source dataset; but the other parameters are not required. They will confuse the user and have no effect on the translation.
 
 So delete these two parameters. You can either click them and press the delete key, or right-click them and select delete.
+
+**11. Test Run Workspace**
+
+Test run the workspace in FME Workbench to ensure it runs to completion. It will create a HTML file as output, though it won’t open it automatically because only FME Server can do that.
+
+**12. Publish to FME Server**
+
+Save the workspace as Exercise3a.fmw. Then select File > Publish to FME Server from the menubar to start the publishing process.
+
+As before (in Chapter 2) enter your connection parameters and then select the Training repository as the location to store the workspace. However, in that dialog be sure to uncheck the box labelled “Upload data files”. The end-user will be uploading the files; we don’t need to.
+
+For the Service to register against, uncheck Job Submitter (and any other services) and check Data Streaming. We’ll cover Data Streaming in more detail later in this chapter; for now just click Publish to finish publishing the workspace.
+
+**13. Run Workspace**
+
+Now – in the role of a data supplier – open the FME Server Web Interface in a web browser.
+
+Browse to the newly uploaded workspace (Workspaces > Training > Exercise3a.fmw) and click Data Streaming:
+
+In the configuration page, under File Upload select Browse and add the file C:\FMEData2015\Resources\Self-Serve\GoodData.tif. It will then be uploaded to FME Server and become available for use.
