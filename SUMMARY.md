@@ -39,4 +39,5 @@
 * [Real-Time with FME Server](real-time_with_fme_server.md)
    * Real-Time with FME Server
    * The Notification Service
+   * An Introduction to Email Notifications
 
