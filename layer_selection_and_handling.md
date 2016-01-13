@@ -17,3 +17,21 @@ Each reader in FME has a parameter called Feature Types to Read. When this param
 The publishing dialog for Feature Types to Read is different because FME can automatically scan the workspace and provide a list of available feature types.
 
 Additionally, the Use Alternate Display Name allows the author to publish alternate names (for example Road Centrelines instead of RdCtrLns) in a similar way to the “Choice with Alias” parameter.
+
+**Grouped Layers**
+
+On some occasions the user does not need to be presented with a full list of layers. Instead they might need to see “groups” of layers.
+
+For example, what is presented to the end-user as “Water” features may actually be made up of multiple source feature types such as Lakes, Rivers, and Streams.
+
+This type of scenario can be achieved using a parameter of type “Choice with Alias (Multiple)”.
+
+Here the author has eight feature types, but wishes to present them to the end-user as three groups of layers.
+
+The first step is to create a parameter of type “Choice with Alias (Multiple)”:
+
+In the parameter configuration, all feature types from the same group are given the same display name:
+
+Finally, the Feature Types to Read parameter is linked to the newly created Choice with Alias parameter:
+
+Now when the workspace is run, the end-user is presented with a set of three options (Environment, Buildings, and Amenities) that reflect a series of different layers/feature types.
