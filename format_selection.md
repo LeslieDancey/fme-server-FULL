@@ -212,3 +212,26 @@ In the Navigator window, locate the Generic Writer and expand its list of parame
 Choose CordinateSystem from the list and click OK.
 
 We now have user parameters set up for both coordinate system and format.
+
+**12. Run Workspace on FME Desktop**
+
+Save the workspace as Exercise3d.fmw.
+
+Run the workspace using Run > Prompt and Run from the menubar.
+
+The translation parameters dialog will open. Select a format and a coordinate system (and any existing parameters) and click OK to run the workspace.
+
+Check the output folder (C:\FMEData2015\Output\Training) and inspect the datasets to ensure the translation is correct.
+
+**13. Publish to FME Server**
+
+Use File > Publish to FME Server to publish the workspace.
+Publish it to the Training repository and register it with the Data Download service.
+
+Notice that in the Register Services window the Data Download Service is highlighted red.
+
+This occurs because we deleted the original JPEG writer to which data was being downloaded from.
+
+We need to specify a Writer for the Service so click Edit and select “Training[Generic]” as the dataset to include for the Data Download Service.
+
+Click Publish to finish publishing the workspace.
