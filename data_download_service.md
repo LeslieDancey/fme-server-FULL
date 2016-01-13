@@ -136,3 +136,11 @@ Interpolation Type: Nearest Neighbor
 Now repeat step 3, but this time adding a RasterMosaicker transformer between the RasterResampler and the Writer feature type.
 
 Open the parameters dialog as before, but now just click OK to accept the default values.
+
+**5. Modify the Destination Feature Type**
+
+In this scenario, we’ll be writing a single (mosaicked) output file. This is at odds with the current dynamic settings that are part of the workspace.
+
+So, click the cog wheel icon on the Writer feature type to open the properties dialog.
+
+In this dialog uncheck the Dynamic Properties parameter and then type AirphotoMosaic for the Raster File Name.
