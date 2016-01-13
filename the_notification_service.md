@@ -91,3 +91,15 @@ under both ‘Financial’ and ‘Sports’ because it relates to both.”
 </td>
 </tr>
 </table>
+
+**Subscriptions**
+
+A Subscription is a component that sends outgoing notifications to a client.
+
+To send a notification in FME Server a user must create a new Subscription.
+
+A Subscription is created in the FME Server web interface under the Notifications section.
+
+As with Publications, each Subscription is also tied to one (or more) Topics, and each Topic can be subscribed to by multiple Subscriptions.
+
+For example, a police headquarters might subscribe to the RoadConditions topic, to receive notifications on that subject. The local TV weather channel also subscribes to the RoadConditions topics, but in addition subscribes to WeatherEvent to hear about those particular events.
