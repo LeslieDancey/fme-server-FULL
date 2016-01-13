@@ -53,3 +53,21 @@ Since they are sending information these clients are called “Publishers”.
 Likewise, FME Server can send a notification for another client system to receive. Alternatively this client can also be a real person, who might receive a notification in the form of an email.
 
 Since they are receiving information, these clients are called “Subscribers”.
+
+**Publications**
+
+A Publication is a component that receives incoming notifications from a client.
+
+To receive notification in FME Server a user must create a new Publication. A Publication is created in the FME Server Web User Interface under the Notifications section.
+
+**Topics**
+
+A Topic is a component that acts as a mediator for messages and defines the message content. Think of it as a subject line for notifications.
+
+Like Publications, a Topic is created in the FME Server Web User Interface, under the Notifications section.
+
+All Publications are linked to one (or more) Topics, so that when an incoming message is received it is categorized and the related Topic is triggered.
+
+Because a Publication can be linked to multiple Topics, each incoming message can trigger multiple actions to occur. Additionally, multiple Publications can trigger the same topic.
+
+For example, a lightning strike sensor might publish to the topics WeatherEvent and AircraftAlerts, whereas a flood sensor might publish to the topics WeatherEvent and RoadConditions.
