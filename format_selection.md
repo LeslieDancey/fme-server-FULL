@@ -235,3 +235,38 @@ This occurs because we deleted the original JPEG writer to which data was being 
 We need to specify a Writer for the Service so click Edit and select “Training[Generic]” as the dataset to include for the Data Download Service.
 
 Click Publish to finish publishing the workspace.
+
+**14. Run Workspace on FME Server**
+
+Changing once again to a user role, go to the Web User Interface and navigate to your workspace: Workspaces > Training > Exercise3d.fmw > Data Download
+
+Notice your new parameters for format and coordinate system. Again select some image files from Browse Resources and this time choose one of the new formats and a coordinate system.
+
+Run the workspace and then download your data to confirm the results.
+
+Congratulations! Your self-serve Data Download service can now accommodate customers who work with different formats and coordinate systems.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“You might have noticed that we could just publish the Writer
+dataset and coordinate system parameters directly, instead of
+creating them manually and then linking the two.
+This will work, but by using a Choice with Alias parameter we
+can restrict the list of formats/coordinate systems, use an alias,
+and also get them as a drop-down list in FME Server.
+Otherwise they would be text-only parameters that would be
+unlimited in what formats and coordinate systems were
+available, as long as you could guess what value was required.”
+</span>
+</td>
+</tr>
+</table>
