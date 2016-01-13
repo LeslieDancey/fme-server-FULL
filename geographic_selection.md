@@ -157,3 +157,34 @@ DataDownload.fmw</td>
 </tr>
 
 </table>
+
+The task here is to let the end user decide what area of data is to be delivered. For this exercise we’ll let them choose which neighborhood of the city they wish the data for.
+
+**1. Start Workbench**
+
+Start FME Workbench (if necessary). Open the workspace from Exercise 3e (or the start workspace for this exercise).
+
+**2. Add Reader**
+
+To filter by neighborhood we need to read a dataset of neighborhood boundaries.
+Select Reader > Add Reader from the menubar and add a new Reader with the following parameters:
+
+**Reader Forma**t Google Earth KML
+
+**Reader Dataset** C:\FMEData2015\Data\Boundaries\VancouverNeighborhoods.kml
+
+**Workflow Options** Individual Feature Types
+
+When prompted to select feature types to add to the workspace, simply deselect everything except the Neighborhoods layer
+
+**3. Add Reprojector**
+
+Being a KML dataset, this data is in a latitude-longitude coordinate system and must therefore be reprojected to match the UTM coordinate system of the raster data.
+
+Add a CsmapReprojector transformer to the workspace.
+
+Connect it to the Neighborhood Reader feature type:
+
+Open the transformer’s parameters dialog.
+
+Leave the Source Coordinate System as <Read from feature> and set the Destination to UTM83-10.
