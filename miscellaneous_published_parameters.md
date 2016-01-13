@@ -103,3 +103,25 @@ DataDownload.fmw</td>
 </tr>
 
 </table>
+
+The Data Download system from Exercise 3b works, but could be improved upon. In particular, it would be helpful for users to be able to choose the resolution and compression of the imagery they are downloading.
+
+**1. Create a Published Parameter for Resolution**
+
+Start FME Workbench (if necessary). Open the workspace from Exercise 3b (or the start workspace for this exercise).
+
+Locate the User Parameters section of the Navigator window. Right-click on the header for this section and choose Add Parameter.
+
+This opens the Add/Edit User Parameter dialog. In this dialog enter the following values:
+
+Type Integer
+
+Name Resolution
+
+Published Yes (Checked)
+
+Optional No (Unchecked)
+
+Prompt Image Resolution (1-50)
+
+Default Value 5
