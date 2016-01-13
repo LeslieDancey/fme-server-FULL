@@ -188,3 +188,42 @@ Connect it to the Neighborhood Reader feature type:
 Open the transformer’s parameters dialog.
 
 Leave the Source Coordinate System as <Read from feature> and set the Destination to UTM83-10.
+
+**4. Add Parameter**
+
+Now let’s add a custom parameter for the user to select which neighborhood to download.
+
+Right-click on Published Parameters in the Navigator window and choose Add Parameter.
+Add a parameter with the following settings:
+
+Type Choice
+
+Name AreaOfInterest
+
+Prompt Select Neighborhood
+
+Published Yes
+
+Optional No
+
+Start to configure the parameter by clicking the […] button for the Configuration parameter.
+
+Instead of entering each neighborhood name separately, we’ll import a list of them from the KML
+dataset. Start this process by clicking the Import button.
+
+When prompted enter:
+
+Reader Format Google Earth KML
+
+Reader Dataset C:\FMEData2015\Data\Boundaries\VancouverNeighborhoods.kml
+
+…and click Next. Select Neighborhoods as the Feature Type and click Next. Select
+NeighborhoodName as the attribute to import from and click Next.
+
+The dataset will now be scanned for valid values. When it is complete click Import.
+
+We now have a list of available neighborhoods to choose from.
+
+Notice that the names are already complete so we don’t need to use any sort of alias.
+
+Click OK and OK again to close the parameter dialogs.
