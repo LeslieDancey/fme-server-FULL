@@ -103,3 +103,15 @@ Click the Parameters button to ensure these are set. If no output format is alre
 Under Add Feature Type(s), ensure Copy from Reader feature type definition is selected.
 
 Click OK again to close the Add Writer dialog.
+
+**4. Edit Feature Type**
+
+When a new Writer is added with Copy from Reader selected, the writer inherits the schema of the specified reader feature type.
+
+Click the cog wheel icon on the Writer feature type to open the properties dialog.
+
+In this dialog uncheck the Dynamic Properties parameter and then type AirphotoMosaic for the Raster File Name.
+
+**5. Connect Feature Type**
+
+In the workspace, connect the new feature type to the RasterMosaicker Output port.
