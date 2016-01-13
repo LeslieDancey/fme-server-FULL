@@ -43,4 +43,5 @@
    * Notifications and Workspaces
    * Notifications Protocols
    * Message Streaming
+   * Troubleshooting for Administrators
 
