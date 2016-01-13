@@ -227,3 +227,20 @@ We now have a list of available neighborhoods to choose from.
 Notice that the names are already complete so we don’t need to use any sort of alias.
 
 Click OK and OK again to close the parameter dialogs.
+
+**5. Add Tester**
+
+Now let’s add a Tester transformer. This will filter out the neighborhoods that weren’t selected.
+
+Add a Tester and connect it to the CsmapReprojector transformer:
+
+Open the Tester parameters dialog by clicking the red cog wheel button.
+
+For the “Left Value” of the test, double-click in the field, click the drop-down arrow, and select Attribute Value > NeighborhoodName.
+Set the
+
+Tester operator to equals (=).
+
+For the Right Value double-click in the field, click the drop-down arrow, then select User Parameter > AreaOfInterest.
+
+Click OK to close the dialog.
