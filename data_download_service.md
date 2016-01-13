@@ -188,3 +188,9 @@ Click Run Workspace on the bottom right to submit the job via the Data Download 
 **10. Download the Output**
 
 After a short time a Success page will appear which now includes a Data Download URL link.
+
+Click the link and download the zip file to your computer. Extract the contents of the zip file.
+
+Notice that you have downloaded a single mosaicked JPEG dataset which has been resampled from the original source GeoTiff files.
+
+Congratulations! You have now created a selfserve data download service for airphotos, which can be used by your customers.
