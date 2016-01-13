@@ -258,3 +258,11 @@ Browse to the newly uploaded workspace (Workspaces > Training > Exercise3a.fmw) 
 In the configuration page, under File Upload select Browse and add the file C:\FMEData2015\Resources\Self-Serve\GoodData.tif. It will then be uploaded to FME Server and become available for use.
 
 This is the key part of the process: the ability for an end-user to upload data to process.
+
+Under Source GeoTIFF File(s), choose Select From Recently Uploaded Files for the source GeoTIFF data and select the newly uploaded GoodData.tif 
+
+Notice there are no other published parameters as there is nothing else we wish the end-user to have control over.
+
+Now click the Run Workspace button. The translation should run to completion and a brief message given to alert us to the status of the dataset.
+
+You can now run the same process on the file BadData.tif to prove that it fails the tests.
