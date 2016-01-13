@@ -174,3 +174,17 @@ Log in to the FME Server Web User Interface. Use the menus and dialogs to naviga
 Notice that you can now run the workspace through either the Job Submitter or the Data Download Service.
 
 Click Data Download.
+
+**9. Run the Workspace**
+
+Once again you are presented with a web form, but this time the form is for running the workspace via the Data Download Service.
+
+As you did in Exercise 2c, scroll down to the Source GeoTIFF parameter and click Browse Resources to browse to the image files you uploaded previously.
+
+Select all of the images (or just a few that neighbor each other).
+
+Click Run Workspace on the bottom right to submit the job via the Data Download Service.
+
+**10. Download the Output**
+
+After a short time a Success page will appear which now includes a Data Download URL link.
