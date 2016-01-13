@@ -76,3 +76,30 @@ DataDownload.fmw</td>
 </tr>
 
 </table>
+
+The Data Download system from Exercise 3c is still lacking some important user options. Users have asked if they can set the destination coordinate system and data format in the Data Download service.
+
+**1. Start Workbench**
+
+Start FME Workbench (if necessary). Open the workspace from Exercise 3c (or the start workspace for this exercise).
+
+**2. Delete JPEG Writer**
+
+To allow selection of data format we’ll need to remove the existing JPEG format Writer and replace with a Generic Writer.
+
+Locate and click on the JPEG Writer in the Navigator window. Press the delete key to remove it. You will receive a prompt confirming your actions. Click OK to accept the deletion.
+
+**3. Add Generic Writer**
+
+Now the JPEG Writer is removed, we can add a Generic Writer.
+Select Writers > Add Writer on the menubar. When prompted enter the following settings:
+
+Format Generic (Any Format)
+
+Dataset C:\FMEData2015\Output\Training
+
+Click the Parameters button to ensure these are set. If no output format is already set then select a format (it doesn’t matter what you choose) and click OK to close the dialog.
+
+Under Add Feature Type(s), ensure Copy from Reader feature type definition is selected.
+
+Click OK again to close the Add Writer dialog.
