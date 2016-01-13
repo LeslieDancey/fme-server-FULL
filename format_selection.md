@@ -131,3 +131,27 @@ Published Yes
 Optional No
 
 Prompt Choose Format
+
+**7. Configure Parameter**
+
+To configure the parameter click the ellipsis […] button next to the Configuration setting.
+
+This will open a dialog in which to define the parameter configuration. Because this is a “Choice with Alias” parameter we need to define both values and a display name. However, since we are using this to select a format there is a nice shortcut that we can use to do so.
+
+Click the Import drop-down and select Writer Format(s) from the menu. This provides a dialog with a list of Writer formats that we can add to our parameter.
+
+Search for and add the following formats:
+
+JPEG
+
+ECW
+
+GeoTiff
+
+Then click OK to close this dialog and return to the configuration dialog. It should look like this:
+
+Notice the Display Name column allows you to provide your users a description or alias for each entry. Edit these in any way you think makes them easiest to understand and click OK.
+
+Choose any of formats as the default and click OK to create the parameter.
+
+The following should now be the list of current published parameters:
