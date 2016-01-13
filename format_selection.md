@@ -180,3 +180,35 @@ Prompt Choose Coordinate System
 Published Yes
 
 Optional No
+
+**10. Configure Parameter**
+
+To configure the parameter click the ellipsis […] button next to the Configuration setting.
+
+This will open a dialog in which to define the parameter configuration. Because this is a “Choice with Alias” parameter we need to define both values and a display name. However, since we are using this to select a coordinate system there is again a nice shortcut that we can use to do so.
+
+Click the Import drop-down and select Coordinate System(s) from the menu. This provides a dialog with a list of coordinate systems that we can add to our parameter.
+
+Search for and add the following coordinate systems:
+
+LL84
+
+BCALB-83
+
+UTM83-10
+
+Then click OK to close this dialog and return to the configuration dialog. It should look like this:
+
+Again, notice the Display Name column allows you to edit the display name to make it easier to recognize. Edit these in any way you think makes them easiest to understand, the click OK.
+
+Choose any of coordinate systems as the default and click OK to create the parameter.
+
+**11. Link Custom Parameter**
+
+Now the coordinate system user parameter must be linked to the appropriate FME parameter.
+
+In the Navigator window, locate the Generic Writer and expand its list of parameters. Locate the Coordinate System parameter and rightclick upon it. Choose Link to User Parameter:
+
+Choose CordinateSystem from the list and click OK.
+
+We now have user parameters set up for both coordinate system and format.
