@@ -113,3 +113,23 @@ Click Parameters to open the parameters dialog.
 In the dialog check Group Elements by Level Names and click OK. This will ensure data is added with the correct level names (not numbers).
 
 Click OK again to add the Reader. You will see a single source feature type which will allow any layer to pass through.
+
+**2. Merge Roads with Raster**
+
+Vector data can be added into a raster image by using the VectorOnRasterOverlayer transformer.
+
+Add a VectorOnRasterOverlayer to the canvas.
+
+Connect the RasterMosaicker Output port to the VectorOnRasterOverlayer Raster input port and connect the new MicroStation Reader feature type to the Vector input port. Connect the Raster output port to the AirphotoMosaic.
+
+**3. Modify the Feature Types to Read Parameter**
+
+When you added the MicroStation Reader, a user parameter was automatically created to allow users to choose which level to read from the file.
+
+In the Navigator pane browse to User Parameters > Published Parameters > FEATURE_TYPES; right-click the parameter and choose Edit Definition.
+
+This opens a dialog that demonstrates the special nature of this parameter. However, as of yet there is no content filled in.
+
+Check the parameter marked Fixed List. Then click the dropdown menu labelled List and choose Add from Current Dataset. Select all of the available feature types in the dataset and click OK.
+
+This will basically create a list of layers for the end-user to select from.
