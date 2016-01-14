@@ -175,3 +175,27 @@ get stored in the Resources folder. Wouldn’t that be funny! Ha ha!”
 </td>
 </tr>
 </table>
+
+**Message Content**
+
+The ability to interpret and process message content is a key reason for using FME workspaces as a subscriber. They can receive the message and then transform it in whatever way is required.
+
+Content is received in a workspace by a Reader.
+
+When the workspace is run (in response to a message) the notification content is substituted in place of the source dataset for a Reader feature type, so that a feature emerges from that reader with the message content attached as an attribute.
+
+**Content Format**
+
+Notification content can be read by a workspace in one of the following formats:
+
+• JSON (Javascript Object Notation)
+
+• XML (Extensible Markup Language)
+
+For example, here a workspace has a Reader that will receive the message content.
+
+Notice that the above workspace uses a Text File Reader.
+
+Reading the incoming message as plain text is the most flexible method because the message is kept intact inside a single attribute and not processed into features. It would also allow you to create one workspace that could deal with both content formats.
+
+The message can then be scanned and processed with a number of different transformers. If the messages are in JSON format there are transformers such as the JSONExtractor and JSONFlattener. Similarly there are XMLFlattener and XMLFragmenter transformers for XML content.
