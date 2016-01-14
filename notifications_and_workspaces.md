@@ -153,3 +153,25 @@ As before, send an email to trigger the notification and monitor the topic to en
 To confirm the notification has caused the workspace to run, open the web interface to FME Server and click the Jobs option on the Manage menu. You should see a completed job for workspace Exercise4b.fmw, where FME ran the workspace in response to the email you just sent.
 
 Congratulations! You have now triggered an FME Server notification using email.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Mr. Flibble says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If you’re using IMAP then this is probably a good point to go back
+to Notifications > Subscriptions, select the Exercise4b push
+subscription, and unsubscribe it from the ImageProcessing topic.
+If you don’t do this, then forever more any incoming email to your
+account will trigger this workspace! And any attachments would
+get stored in the Resources folder. Wouldn’t that be funny! Ha ha!”
+</span>
+</td>
+</tr>
+</table>
