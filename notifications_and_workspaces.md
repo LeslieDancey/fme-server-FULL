@@ -42,5 +42,14 @@ Two important parameters are Subscribed Topics and Notification Reader
 
 **Notification Reader** tells FME which Reader should receive the notification content.
 
-In this example any incoming message that is flagged under RoadCondition will cause the
-workspace to run. The message content will be funneled through a plain text Reader called – appropriately enough – IncomingMessage.
+In this example any incoming message that is flagged under RoadCondition will cause the workspace to run. The message content will be funneled through a plain text Reader called – appropriately enough – IncomingMessage.
+
+**Managing Workspace Subscription**
+
+Once a workspace is published and registered with the notification server as a subscriber it appears in the Notification section of the Web user interface.
+
+The workspace appears as a Subscription because it is literally subscribed to the topic(s) shown.
+
+It is listed with the protocol "push" because FME Server is pushing a notification using HTTP post to run the workspace.
+
+Clicking on the subscription allows you to make edits to the notification without having to republish the workspace; for example topics can be added or removed.
