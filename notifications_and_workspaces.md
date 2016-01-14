@@ -310,3 +310,21 @@ The file being read here is provided because all Readers need a source dataset, 
 Examine the file in a text editor. It contains JSON content. You can see a number of JSON attributes available, which come from an email, and you will be able to read and use any of these in a workspace. In this exercise we’ll be using the Subject of the email.
 
 Because you set the Parameter to read the whole file at once, all of the contents will be read into a single attribute in a single feature, rather than creating multiple features.
+
+**3) Process the JSON Message**
+
+Back in the workspace, connect the Text Line source feature type to the JSONFlattener already in the workspace.
+
+Click the cog wheel icon to open the parameters dialog for the JSONFlattener.
+
+Examine the parameters. This transformer flattens the JSON attributes into FME attributes and exposes all of them.
+
+Browse through the rest of the workspace. It also reads a KML dataset of neighborhood polygons and then filters the neighborhood by the subject of the email to clip by that neighborhood. The UnconditionalFeatureMerger is a custom transformer (available on the FME Store) that simply merges data together without any matching key.
+
+**4) Test the Workspace in FME Workbench**
+
+Test the workspace by running it in FME Workbench.
+
+This will work because the text file contains a sample email where the neighborhood is coming from the email_publisher_subject attribute. If you wish, you can edit the file and use either “Downtown” or “West End” as the neighborhood.
+
+Inspect the output. It should look like this:
