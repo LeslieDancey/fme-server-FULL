@@ -414,3 +414,27 @@ However, the various fields for the email itself (From, To, Subject, Template) d
 
 One other important parameter is the Email Format.
 This can either be plain text or HTML.
+
+**Workspaces as a Publication**
+
+When a workspace acts as a Publication, it triggers a topic when it is run.
+
+In effect, the workspace is publishing to that topic.
+
+In this case the message is constructed in the workspace and passed onto the Subscription.
+
+Publishing notification messages from FME is useful for both sending messages containing content from the data being processed, and for reporting the status of a translation, such as whether it has run successfully or ended in a failure.
+
+**Message Content**
+
+The ability to construct message content from a variety of sources – including spatial – is a key reason for using FME workspaces as a publisher. Workspaces can transform data in multiple ways, use it to construct a message, and then dispatch that message to users as a notification.
+
+Content is sent from a workspace by a Writer.
+
+When the workspace is run the notification message is constructed as an attribute and sent to a Writer feature type. The output from that feature type is used by the notification service as the content of the publication.
+
+**Content Format**
+
+For the purposes of FME notifications, the content of a workspace publication can be in any format. It does not necessarily need to be either JSON or XML, though obviously it would have to be if any client who subscribes to the notifications requires it in that format.
+
+For example, here a workspace constructs a plain-text weather (lightning) alert using an AttributeCreator:
