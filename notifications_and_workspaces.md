@@ -199,3 +199,29 @@ Notice that the above workspace uses a Text File Reader.
 Reading the incoming message as plain text is the most flexible method because the message is kept intact inside a single attribute and not processed into features. It would also allow you to create one workspace that could deal with both content formats.
 
 The message can then be scanned and processed with a number of different transformers. If the messages are in JSON format there are transformers such as the JSONExtractor and JSONFlattener. Similarly there are XMLFlattener and XMLFragmenter transformers for XML content.
+
+**Handling Email Publications in a Workspace**
+
+As previously described, content from a notification will be passed into the workspace to a Reader, usually a plain text Reader, and stored in an attribute.
+
+For a JSON email the content will look like this:
+
+{
+"fns_type": "email_publisher",
+"email_publisher_to": "demo@somehost.com",
+"email_publisher_subject": "MIME message from sender",
+"email_publisher_content{0}": "Testing Email",
+"email_publisher_content_type{0}": "text/plain",
+"email_publisher_from": "sender@somehost.com",
+"email_publisher_received": "Thu May 17 11:15:46 PDT 2012",
+"email_publisher_sent": "Thu May 17 11:15:46 PDT 2012",
+"email_publisher_attachment{0}": "C:\\Temp\\demo246129673106713_canada.xsd"
+}
+
+Notice how it includes the email from and to fields, plus the content itself. If there are attachments they will be stored on the file system and a path substituted into the JSON content.
+
+This content can be converted into FME attributes using the JSONFlattener transformer:
+
+The result – as shown in the FME Data Inspector – will look something like this:
+
+Now the content is available to the workspace and can be processed as required.
