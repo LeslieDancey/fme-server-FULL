@@ -69,16 +69,12 @@ Instead of using the in-built email server, an IMAP Publication connects to anot
 
 Setting up an IMAP Publication
 
-Like the SMTP protocol, IMAP Publications are set
-up in the Notifications section of the Web User
-Interface, by creating a new Publication and
-choosing the Email (IMAP) protocol.
+Like the SMTP protocol, IMAP Publications are set up in the Notifications section of the Web User Interface, by creating a new Publication and choosing the Email (IMAP) protocol.
+
 Here are the parameters for an IMAP Publication:
-Notice that most parameters are for defining the
-IMAP (Email) server connection.
-Two important parameters let you decide the interval
-to check for emails and decide whether to fetch all
-unread emails or new emails only.
-There is also a parameter to select an FME Server
-resource location in which to store any email
-attachments:
+
+Notice that most parameters are for defining the IMAP (Email) server connection.
+
+Two important parameters let you decide the interval to check for emails and decide whether to fetch all unread emails or new emails only.
+
+There is also a parameter to select an FME Server resource location in which to store any email attachments:
