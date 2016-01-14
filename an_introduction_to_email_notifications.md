@@ -41,3 +41,22 @@ Now, whenever an email is sent to RoadInfo@serverhost.com – for example someon
 SMTP email publications are possible because FME Server includes an in-built email server as one of its components. However, this does require that the server has a domain name registered with a DNS name server.
 
 The steps to set up the email server for notifications are documented in the FME Server Reference Manual, and also in the following exercise.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Sister Intuitive says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“FME Cloud instances are automatically configured for email
+notification, and have a public domain name too, so you don’t need
+to do any additional setup.”
+</span>
+</td>
+</tr>
+</table>
