@@ -110,3 +110,46 @@ Notification</td>
 </tr>
 
 </table>
+
+This exercise continues setting up a system that provides email-driven access to image files. In this part we’ll create a workspace that will run in response to the incoming notification.
+
+**1. Create a Workspace**
+
+Now we have a Publication and a Topic that it will trigger when FME Server discovers a new email in the defined email account. However, at the moment there is nothing subscribed to that publication to act upon it. We’ll handle that part of the solution with a workspace.
+
+Start FME Workbench. Begin with a blank canvas and simply add a Creator transformer. This will give us a workspace to run in response to an email; albeit one that doesn’t do much yet.
+
+Save the workspace as Exercise4b.fmw
+
+**2. Publish Workspace**
+
+Now let’s publish the workspace to FME Server. Start the Publishing Wizard using File > Publish to Server on the menubar. When prompted enter the same connection parameters as before.
+Publish the workspace to the Training repository. There are no data files that need to be published along with the workspace.
+
+In the services dialog put a checkmark in the Notification Service’s box. Click Edit to see the Service Properties for this service.
+
+Click the […] button next to Subscribe to Topic(s) to retrieve a list of available topics from the server.
+
+Select the ImageProcessing topic created in exercise 4a.
+
+All other parameters can be left as they are, so simply click OK to close the dialog.
+
+Then click Publish to finish publishing the workspace.
+
+**3. Confirm Subscription**
+
+Remember, the workspace is now effectively a subscriber to the email publication. To confirm this, return to the web interface. Select Notifications from the Manage menu and then click the Subscriptions tab.
+
+You should see a push subscription for your workspace associated with the topic ImageProcessing. Click on the subscription to view the details.
+
+Click Cancel as we don’t need to make any changes to this component.
+
+**4. Send an Email**
+
+As before, send an email to trigger the notification and monitor the topic to ensure that it arrives.
+
+**5. Confirm Notification**
+
+To confirm the notification has caused the workspace to run, open the web interface to FME Server and click the Jobs option on the Manage menu. You should see a completed job for workspace Exercise4b.fmw, where FME ran the workspace in response to the email you just sent.
+
+Congratulations! You have now triggered an FME Server notification using email.
