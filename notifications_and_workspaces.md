@@ -332,3 +332,22 @@ Inspect the output. It should look like this:
 **5) Set Writer Path**
 
 Set the JPEG writer path to the Output folder of Server Resources.
+
+**6) Publish to FME Server (Step 1)**
+
+Start the Publish Wizard from the menu or toolbar and enter the connection parameters when prompted. Select the Training repository to store the workspace, as usual.
+
+Click the Select Files button in the dialog and ensure that only the KML dataset VancouverNeighborhoods.kml gets uploaded to the repository.
+
+The easiest way to do this is to click the Files/Folders box to turn off ALL files, and then simply turn the neighborhoods file back on:
+
+Uncheck the GeoTIFF files if they are checked because they are already available in the FME Server Repository.
+
+However, you will still need to point the file location from the workspace to the resource location.
+This is necessary because there is no end-user to set this – for example in a published parameter.
+
+Therefore, click OK. A dialog will appear in which you are warned that the file references are not valid. For each of the Orthophoto references, click the […] ellipsis button and browse to the true file location in the resources folder.
+
+When a reference is fixed then it will show as pointing to the resources folder; for example Data/Orthophotos/02-03-HI.tif
+
+Once complete for all files, click OK and then click Next to go on to the next publishing stage.
