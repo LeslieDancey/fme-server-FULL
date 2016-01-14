@@ -13,3 +13,11 @@ A workspace is the key functionality of FME and with one you can read spatial da
 This blend of live messaging with Spatial ETL is unique.
 
 In this scenario a workspace is literally a Subscriber to the incoming Publication, and receives the message content from it. The workspace then acts as a Publisher, sending an outgoing message to any Subscribers.
+
+Of course, the above diagram shows the full potential of a notification system. It would be just as appropriate to have a system that triggered a workspace in response to a Publication, but without the workspace sending an outgoing message:
+
+Similarly, it’s just as appropriate to have a workspace that is run by some other means, and which sends an outgoing message to a Subscription when it is complete:
+
+For example, a workspace might be started as a scheduled task.
+
+When the task is complete FME sends a notification email to inform an administrator.
