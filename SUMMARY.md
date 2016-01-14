@@ -39,7 +39,7 @@
 * [Real-Time with FME Server](real-time_with_fme_server.md)
    * [Real-Time with FME Server](real-time_with_fme_server2.md)
    * [The Notification Service](the_notification_service.md)
-   * An Introduction to Email Notifications
+   * [An Introduction to Email Notifications](an_introduction_to_email_notifications.md)
    * Notifications and Workspaces
    * Notifications Protocols
    * Message Streaming
