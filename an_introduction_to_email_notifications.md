@@ -155,3 +155,24 @@ Notification</td>
 </tr>
 
 </table>
+
+This exercise is the first part in setting up a system that provides email-driven access to image files. In this part we’ll concentrate on setting up a Topic and Publication.
+
+For this setup you may use either the SMTP or IMAP protocol for email.
+
+For SMTP, this exercise requires your FME Server to have a DNS record and SMTP configured.
+
+For IMAP, this exercise requires access to an email server that supports the IMAP protocol.
+Gmail, Outlook, and Yahoo! all are acceptable web-based solutions.
+
+**1. Create a Topic**
+
+The first step is to create a topic that will be triggered by the email.
+Open the Web User Interface in a web browser by visiting http://<servername>/fmeserver
+
+Click on the menu item labelled Manage > Notifications and then click the tab labelled Topics.
+
+Click New and enter a topic name such as ImageProcessing.
+Enter a description such as “Topic used to trigger an image processing workspace”.
+
+Click OK to close the dialog and create the Topic.
