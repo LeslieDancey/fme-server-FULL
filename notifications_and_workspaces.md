@@ -21,3 +21,26 @@ Similarly, it’s just as appropriate to have a workspace that is run by some ot
 For example, a workspace might be started as a scheduled task.
 
 When the task is complete FME sends a notification email to inform an administrator.
+
+**Workspaces as a Subscription**
+
+When a workspace needs to react to an incoming notification it is done by connecting the workspace to a particular topic. The workspace is run in response to that topic being triggered by a Publication.
+
+In effect, the workspace is subscribing to that topic.
+
+In this case the message is received and passed into the workspace for processing.
+
+**Registering a Workspace**
+
+A workspace is set up to receive messages when it is published to FME Server and registered with the Notification service.
+
+The Service is initially highlighted in red because there are several parameters that need to be set before it can be used.
+
+Two important parameters are Subscribed Topics and Notification Reader
+
+**Subscribed Topics** tells FME which notification topics should trigger the workspace.
+
+**Notification Reader** tells FME which Reader should receive the notification content.
+
+In this example any incoming message that is flagged under RoadCondition will cause the
+workspace to run. The message content will be funneled through a plain text Reader called – appropriately enough – IncomingMessage.
