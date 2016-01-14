@@ -192,3 +192,21 @@ Now select Email (SMTP) as the Publication Protocol. This will open the Email Us
 This will create an email address <name>@<hostname> The hostname is assumed, so you don’t need to enter it yourself.
 
 Now all emails sent to that address will trigger the ImageProcessing topic.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">InteropGeek68 says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If you don’t have access to a web-based email account, use
+fmeserver2014@gmail.com with the password lizardisland.”
+</span>
+</td>
+</tr>
+</table>
