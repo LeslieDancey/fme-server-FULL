@@ -438,3 +438,5 @@ When the workspace is run the notification message is constructed as an attribut
 For the purposes of FME notifications, the content of a workspace publication can be in any format. It does not necessarily need to be either JSON or XML, though obviously it would have to be if any client who subscribes to the notifications requires it in that format.
 
 For example, here a workspace constructs a plain-text weather (lightning) alert using an AttributeCreator:
+
+Now the message attribute is connected to a Text File Writer in order to provide a means for publishing the outgoing message.
