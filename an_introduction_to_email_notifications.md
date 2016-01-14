@@ -176,3 +176,19 @@ Click New and enter a topic name such as ImageProcessing.
 Enter a description such as “Topic used to trigger an image processing workspace”.
 
 Click OK to close the dialog and create the Topic.
+
+**2. Create a Publication**
+
+In the Notifications part of the web interface click on the Publications tab. Click the New button to create a new Publication.
+
+The new publication can be created to use either the Email protocol or the IMAP protocol.
+
+**Email Protocol**
+
+Enter Email Receiver as the new publication’s name. Then click in the text box labelled Click to Select under Topics to Publish To. Select the newly created ImageProcessing topic from the drop-down list.
+
+Now select Email (SMTP) as the Publication Protocol. This will open the Email User Name parameter. Enter a name for receiving email, for example in the format FirstnameLastname
+
+This will create an email address <name>@<hostname> The hostname is assumed, so you don’t need to enter it yourself.
+
+Now all emails sent to that address will trigger the ImageProcessing topic.
