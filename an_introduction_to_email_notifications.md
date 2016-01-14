@@ -210,3 +210,37 @@ fmeserver2014@gmail.com with the password lizardisland.”
 </td>
 </tr>
 </table>
+
+**IMAP Protocol**
+
+IMAP is the easier way to handle incoming email where computers might not have a proper DNS record, such as on an internal network.
+
+Enter IMAP Email as the new publication’s name.
+
+Next, click in the text box labelled Click to Select under Topics to Publish To. Select the newly created ImageProcessing topic from the drop-down list.
+
+Now select Email (IMAP) as the Publication Protocol. This will open a number of other parameters. Enter them according to your email account:
+
+In case it is of use, the usual server information is as follows:
+
+Set the Poll Interval to 60 seconds and Emails to Fetch to New Emails Only.
+
+Select a Resource Folder for attachments to be saved to and click OK to close the dialog and create the new Publication.
+
+**3. Start Monitoring Topic**
+
+The monitoring tool lets you know when a notification is received.
+
+NB: To use monitoring requires the WebSocket port (usually 7078) to be open. This should automatically be the case on FME Cloud, but other systems may require some manual firewall configuration.
+
+On the Notifications page click the tab labelled Topic Monitoring and select ImageProcessing as the topic to monitor:
+
+**4. Send an Email**
+
+Now let’s test the setup so far by sending an email to FME Server. At the moment you can use any subject line or contents for the email, as FME is not yet using them to do anything.
+
+If you chose the SMTP protocol then the email should be sent to <emailname>@<hostname>.
+
+For example an FME Cloud address would be like this: MyName@server-tutorial.safe-software.fmecloud.com And an Amazon AWS machine would have an address like this:
+
+MyName@ec2-54-224-106-213.compute-1.amazonaws.com
