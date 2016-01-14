@@ -78,3 +78,23 @@ Notice that most parameters are for defining the IMAP (Email) server connection.
 Two important parameters let you decide the interval to check for emails and decide whether to fetch all unread emails or new emails only.
 
 There is also a parameter to select an FME Server resource location in which to store any email attachments:
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Monsieur D. Server says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Most email servers support IMAP functionality, as do the majority
+of cloud-based email providers such as Gmail, Outlook.com, Yahoo!,
+etc; so it’s very easy to have FME Server scan a Gmail account for
+incoming mail, and then act on its contents.”
+</span>
+</td>
+</tr>
+</table>
