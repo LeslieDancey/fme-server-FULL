@@ -283,3 +283,30 @@ Notification</td>
 
 </table>
 
+Having already set up a solution for incoming email notifications (in Exercise 4b) we can now expand upon that to let the user select a neighborhood in the email subject line. This neighborhood will be used to select a feature to clip the data with.
+
+**1. Open the Starting Workspace**
+
+In FME Workbench open the starting workspace for this exercise.
+
+You must open this workspace as the exercise does not continue on from Exercise 4b. This workspace has more content and is similar to those created in Chapter 3; it reads and resamples raster data, clips it to a boundary, and writes it to a JPEG file.
+
+**2. Add a Text File (TEXTLINE) Reader**
+
+To read information into a workspace, from a notification, requires the use of a Reader. In this case we’ll use a Text File Reader.
+
+Select Readers >Add Reader from the menubar and add a Text File reader using the following settings:
+
+Source Format: Text File
+
+Source Dataset: C:\FMEData2015\Resources\emailIMAP.json
+
+Parameters:Read Whole File at Once: Yes
+
+The Read Whole File parameter is VERY important! Click OK and OK again to add the Reader.
+
+The file being read here is provided because all Readers need a source dataset, but also as an example of what Notification Service sends to a workspace when FME Server receives an email.
+
+Examine the file in a text editor. It contains JSON content. You can see a number of JSON attributes available, which come from an email, and you will be able to read and use any of these in a workspace. In this exercise we’ll be using the Subject of the email.
+
+Because you set the Parameter to read the whole file at once, all of the contents will be read into a single attribute in a single feature, rather than creating multiple features.
