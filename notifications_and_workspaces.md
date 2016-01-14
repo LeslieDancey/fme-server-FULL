@@ -328,3 +328,7 @@ Test the workspace by running it in FME Workbench.
 This will work because the text file contains a sample email where the neighborhood is coming from the email_publisher_subject attribute. If you wish, you can edit the file and use either “Downtown” or “West End” as the neighborhood.
 
 Inspect the output. It should look like this:
+
+**5) Set Writer Path**
+
+Set the JPEG writer path to the Output folder of Server Resources.
