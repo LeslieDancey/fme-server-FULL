@@ -351,3 +351,45 @@ Therefore, click OK. A dialog will appear in which you are warned that the file 
 When a reference is fixed then it will show as pointing to the resources folder; for example Data/Orthophotos/02-03-HI.tif
 
 Once complete for all files, click OK and then click Next to go on to the next publishing stage.
+
+**7) Publish to FME Server (Step 2)**
+
+In the Services dialog check the Notification Service and click Edit to open the Service Properties.
+Choose the topic ImageProcessing you created in the previous exercise as the Subscribed Topic.
+The Notification Reader should be set to the Reader (emailIMAP[TEXTLINE]).
+This way the content of any incoming email will be passed directly to that Reader.
+
+Click OK and then Publish to complete the wizard.
+
+**8) Send an Email to FME Server**
+
+As before, use any method you like to send an email to your FME Server.
+Use the email address you used in Exercise 4a/4b. Enter either Downtown or West End as the subject of the email.
+
+**9) Confirm Workspace Triggered**
+
+Again, if you are using IMAP it make may take a couple of minutes until FME Server is notified.
+
+Open the Web User Interface and click on the Jobs link and to view the Jobs history. Look for a completed job where FME Server ran Exercise4c.fmw in response to the email. Check the Resources/Data/Output directory for your imagery.
+
+Congratulations! Now users can email your FME Server with specific information on how to run a workspace - this is truly Self-Serve! In this next exercise you will configure FME Server to email the user back a result.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Mr. Flibble says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Again, you’ll probably want to unsubscribe Exercise4c from the
+ImageProcessing topic if you’re using IMAP. Unless you want all
+incoming emails to keep triggering this workspace again and again
+and again and again and again and again and again …”
+</span>
+</td>
+</tr>
+</table>
