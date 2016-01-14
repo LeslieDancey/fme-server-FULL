@@ -244,3 +244,10 @@ If you chose the SMTP protocol then the email should be sent to <emailname>@<hos
 For example an FME Cloud address would be like this: MyName@server-tutorial.safe-software.fmecloud.com And an Amazon AWS machine would have an address like this:
 
 MyName@ec2-54-224-106-213.compute-1.amazonaws.com
+
+If you used the IMAP protocol then send an email to the account you chose in the Publication.
+
+For IMAP there will probably be a slight delay because FME is only checking for email every minute, plus it will take a short while for the email to arrive. However, shortly the email will be recognized by FME Server, the notification topic triggered, and the activity reported by the monitor:
+
+**Congratulations!**
+You have now triggered an FME Server notification using email.
