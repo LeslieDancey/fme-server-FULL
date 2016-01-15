@@ -540,3 +540,42 @@ Otherwise a notification is triggered for every feature!”
 </td>
 </tr>
 </table>
+
+**Workspaces as a Subscription AND a Publication**
+
+A system that needs to both receive and send notifications looks like this:
+
+In this scenario the same workspace receives an incoming notification sends an outgoing notification. It is registered with the notification service (in order to receive incoming notifications) and the notification parameters set on a different service (in order to send outgoing notifications).
+
+For example, details of a lightning strike are received via a LightningStrike topic. The workspace then processes the information – for example it determines which state/province/county the strike occurred in – creates a new message and dispatches it to subscribers via a WeatherAlert topic.
+
+The important thing to notice is that the scenario involves two different topics, here Topic I and Topic II.
+
+A major problem occurs if you set up such a scenario but only use one topic.
+
+That’s because for every notification the workspace receives it will publish back to the same topic, triggering itself again and causing an infinite loop of messages.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Daily Interop Reporter, Cha d Pugh-Litzer says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Using the same topic for incoming and outgoing notifications is
+like setting up your email to forward all incoming messages to
+yourself. You’ll end up with a loop that continues until you crash
+the email system!
+To avoid confusion it’s a good idea to clarify which topics are for
+in and out communication through their names. For example, use
+LighningStrike_In and LightningStrike_Out to differentiate topics
+that are triggered by incoming alerts and those triggered by
+outgoing alerts”
+</span>
+</td>
+</tr>
+</table>
