@@ -653,3 +653,34 @@ So open the Web User Interface and click the Notifications link on the Manage me
 Continue in the Notifications part of the Web User Interface. Click the Subscriptions tab and then click New.
 
 Enter EmailSender as the subscription name and choose the sendemail topic created in step 2.
+
+**4. Enter Email Settings**
+
+Select email as the protocol for the new subscription.
+
+Use the table below to enter your email settings depending on your email service. Please note that if you are using your own internal email system the settings may differ and you may need to ask your IT provider.
+
+The following settings are same regardless of email service:
+
+Email to: <leave blank>
+
+Email cc: <leave blank or enter an admin cc email address>
+
+Email from: <your email address>
+
+Email Subject: Your Data is Attached
+
+Email Format: TEXT
+
+Email Template: <leave blank>
+
+We can leave some of these fields empty because they will be populated from the workspace when we send the email notification message.
+Click OK to accept the settings and create the new Subscription.
+
+**5. Add FMEServerEmailGenerator**
+
+Back in FME Workbench, click on the workspace canvas and start typing “FMEServer” to locate and add an FMEServerEmailGenerator transformer.
+
+This is a Custom Transformer that will be downloaded from the FME Store – as denoted by the small arrow on its icon in the Quick Add dialog.
+
+The transformer is designed to be a quick and easy way to set up an outgoing email.
