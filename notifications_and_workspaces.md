@@ -633,3 +633,23 @@ Subscriptions</td>
 </tr>
 
 </table>
+
+Having already set up a solution for incoming email notifications (in Exercise 4b) and used that information to select an area of interest (Exercise 4c) we can now expand upon that to return an email containing the data chosen by the user.
+
+**1. Open the Starting Workspace**
+
+In FME Workbench open the starting workspace for this exercise.
+
+You must open this workspace as it is slightly modified from the one in Exercise 4c. A UUIDGenerator transformer and a dataset fanout has been added so that the output JPEG file has a unique name and is written to the FME Server Resources/Data/Output directory.
+
+**2. Create an Email Topic**
+
+Remember, it’s important for a setup like this to use different topics for incoming and outgoing notifications; otherwise the process will end up in an infinite loop.
+
+So open the Web User Interface and click the Notifications link on the Manage menu. In the Topics tab click New to create a new Topic. Enter the name sendemail. Enter some text in the description to say “Use this topic to trigger an email using an Email Subscription”.
+
+**3. Create an Email Subscription**
+
+Continue in the Notifications part of the Web User Interface. Click the Subscriptions tab and then click New.
+
+Enter EmailSender as the subscription name and choose the sendemail topic created in step 2.
