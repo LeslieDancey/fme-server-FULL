@@ -47,3 +47,31 @@ If the filename is already known then the workspace could just read from it dire
 
 For an example of using the Directory Watch tool, see the exercise in Chapter 5.
 
+**Mobile Notifications**
+
+Mobile Notifications are Subscription-only protocols that send notifications to mobile devices. The two protocols available are:
+
+- Apple Push Notification
+
+- Google Cloud Messaging
+
+**Apple Push Notifications**
+
+The Apple Push Subscriber allows delivery of messages to an Apple iOS device, like an iPhone.
+Messages are sent from FME Server to the device via a cloud service called the Apple Push Notification service (APNs).
+
+The FME Server Reference Manual explains how to set up such a notification and what is required in terms of Apple “SSL Keystore” and device tokens.
+
+Two free FME apps on the iTunes store exist to provide a starting point for mobile apps; they are the FME Reporter and FME Alerts.
+
+The FME Reporter is a Publication tool used for sending location from a device’s GPS to a notification topic on FME Server. Technically it’s not a Subscriber so it won’t be using the Apple Push Notification protocol.
+
+FME Alerts is a Subscriber tool for receiving notifications from an FME Server using the Apple Push Notification protocol. Location is also sent to the FME Server to allow spatial-based filtering to occur. For example, you can push alerts on local traffic based on the GPS location.
+
+The source code for both apps is made available from Safe Software, so that they can be used as prototypes for your own custom applications.
+
+**Google Cloud Messaging**
+
+Google Cloud Messaging is the Android equivalent to Apple notifications. Again they involve sending content to a mobile device from an FME Publication.
+
+There are also two free FME apps on the Google Play store to experiment with and use.
