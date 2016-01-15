@@ -762,3 +762,22 @@ Again send an email to your FME Server using the email address you have been usi
 After a minute or two you will receive an email back with the image attached. The image will be an orthophoto clipped to the neighbourhood you entered in the subject line.
 
 Congratulations! Without writing any code you have set-up an email ordering system for imagery.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Mr. Flibble says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Exercise4d. As with 4b and 4c, unsubscribe it from the notification
+if you are using IMAP and don’t want all incoming emails to keep
+triggering the workspace.”
+</span>
+</td>
+</tr>
+</table>
