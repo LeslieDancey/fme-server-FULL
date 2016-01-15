@@ -42,7 +42,7 @@
    * [An Introduction to Email Notifications](an_introduction_to_email_notifications.md)
    * [Notifications and Workspaces](notifications_and_workspaces.md)
    * [Notifications Protocols](notifications_protocols.md)
-   * Message Streaming
+   * [Message Streaming](message_streaming.md)
    * Troubleshooting for Administrators
    * Module Review
 
