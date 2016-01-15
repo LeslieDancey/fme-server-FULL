@@ -480,3 +480,43 @@ topics to receive notifications from all workspaces”
 </td>
 </tr>
 </table>
+
+**Handling Email Subscriptions in a Workspace**
+
+As previously described, content being sent to a notification will be passed out of the workspace using a Writer, usually a plain text Writer that is passed the message in an attribute.
+
+Therefore, to create the content requires only the construction of the attribute with transformers.
+
+For a JSON email you would construct an attribute like this:
+
+{
+"email_to" : "notifications@enduser.com",
+"email_cc" : "",
+"email_from" : "notifications@fmeserver.com",
+"email_replyto" : "",
+"email_subject" : "Notification Subject",
+"subscriber_content" : "Notification Content"
+}
+
+This could be created using an AttributeCreator transformer, where the email addresses and content can be substituted as required, and would look like this:
+
+If the Email format is set to HTML in the Notification GUI, then the email content could be constructed as HTML too, for example:
+
+The workspace in such a case might look like this:
+
+**Publishing with a Transformer**
+
+Instead of using a Writer and sending a notification at its completion, a workspace can send a notification through a special transformer called the FMEServerNotifier.
+
+This workspace will trigger the notification wherever it is run.
+
+Notification properties are set in the transformer parameters dialogs (it is a wizard composed of two panes)
+
+The transformer parameters include those for connecting to FME Server, and ones for the topic to post to and the message to be included.
+Here the author intends to publish the contents of an attribute called text_line_data to a topic called RoadConditionReports_Out
+
+There are two advantages to issuing a notification this way, over using a Writer:
+
+- The workspace can issue a notification during a translation, rather than at the end of it.
+
+- The workspace does not need to be run on FME Server to generate an FME Server notification. It will produce the same notification when run using FME Desktop.
