@@ -739,3 +739,26 @@ As always, start the Publish Wizard, enter the connection parameters, and choose
 As in Exercise 4c, click the Select Files button to ensure that the VancouverNeighborhoods.kml file will be uploaded to the repository, and that the image data is not.
 
 Again as in Exercise 4c, click OK and then – when warned about invalid references – for each of the Orthophoto references, click the […] ellipsis button and browse to the true file location in the resources folder.
+
+**10. Publish the Workspace (Step 2)**
+
+In the Services dialog check the Notification Service and click its Edit button.
+Again select ImageProcessing as the Subscribed Topic, and set the Notification Reader to the email[TEXTLINE] Reader.
+
+In the same Edit Service Properties dialog scroll down and expand the Notify on Job Completion settings.
+
+Set Topics to Publish (Success) to the sendemail topic you previously created.
+
+Set the Notification Writer should be set to your Email[TEXTLINE] Writer.
+
+Leave Topics to Publish (Failure ) blank, but notice this is where you could handle a failure in workspace if you wanted to.
+
+Click OK and then Publish to complete the wizard.
+
+**11. Send an Email to FME Server**
+
+Again send an email to your FME Server using the email address you have been using, and entering either Downtown or West End as the subject of the email.
+
+After a minute or two you will receive an email back with the image attached. The image will be an orthophoto clipped to the neighbourhood you entered in the subject line.
+
+Congratulations! Without writing any code you have set-up an email ordering system for imagery.
