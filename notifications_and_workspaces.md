@@ -716,3 +716,26 @@ Subject: Your Image Order is Attached
 Message: Please find attached the image you requested.
 
 Note that the blank parameters will come from the Email Subscription we set up in Step 1
+
+**8. Add a Notification Writer**
+
+Having created the email to send we now need to add a Writer to pass it to the Notification service.
+
+Select Writers > Add Writer from the menubar. Create a writer with the following parameters:
+
+Writer Format: Text File
+
+Writer Dataset: C:\FMEData2015\Output\Email.json
+
+Once added, connect the FMEServerEmailGenerator transformer to the new feature type.
+The transformer automatically generates the text_line_data attribute required by this Writer.
+
+**9. Publish the Workspace (Step 1)**
+
+This workspace is the heart of a system of incoming and outgoing notification messages; therefore it needs to be published to FME Server as both a Publication and Subscription!
+
+As always, start the Publish Wizard, enter the connection parameters, and choose the Training repository to store the workspace.
+
+As in Exercise 4c, click the Select Files button to ensure that the VancouverNeighborhoods.kml file will be uploaded to the repository, and that the image data is not.
+
+Again as in Exercise 4c, click OK and then – when warned about invalid references – for each of the Orthophoto references, click the […] ellipsis button and browse to the true file location in the resources folder.
