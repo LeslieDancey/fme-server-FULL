@@ -520,3 +520,23 @@ There are two advantages to issuing a notification this way, over using a Writer
 - The workspace can issue a notification during a translation, rather than at the end of it.
 
 - The workspace does not need to be run on FME Server to generate an FME Server notification. It will produce the same notification when run using FME Desktop.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Aunt Interop says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“If you only want to trigger the notification once, then add a
+Sampler transformer before the FMEServerNotifier and set it up to
+filter out all but one feature.
+Otherwise a notification is triggered for every feature!”
+</span>
+</td>
+</tr>
+</table>
