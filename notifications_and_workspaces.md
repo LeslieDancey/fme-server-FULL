@@ -684,3 +684,33 @@ Back in FME Workbench, click on the workspace canvas and start typing “FMEServ
 This is a Custom Transformer that will be downloaded from the FME Store – as denoted by the small arrow on its icon in the Quick Add dialog.
 
 The transformer is designed to be a quick and easy way to set up an outgoing email.
+
+**6. Connect Custom Transformer**
+
+Connect the newly placed custom transformer on a new connection from the UUIDGenerator: DO NOT connect it between the UUIDGenerator and the Writer feature type. We’ll shortly add a new Writer to connect it to.
+
+**7. Set Transformer Parameters**
+
+Click on the red cog-wheel icon to open the parameters dialog for the FMEServerEmailGenerator transformer. As you’ll see, there are many parameters to help us create the JSON message we will be sending to the email Subscription.
+
+The important parameters should be set as follows:
+
+**To:** This value depends on whether you are using IMAP or SMTP to send your email to FME Server. Click the drop-down arrow to the right and select Attribute Value > clipper_email_publisher_from or clipper_imap_publisher_from. This attribute contains the address the incoming email was received from and therefore should be used for who the outgoing email will be sent to.
+
+**Attachments:** Click the drop-down arrow to the right and select Open Text Editor. This value will be slightly more complex than an attribute and we need to construct it with an editor such as this.
+
+Enter the following into the text editor field: $(FME_SHAREDRESOURCE_DATA)/Output/@Value(_uuid)/AirphotoMosaic.jpg
+
+This tells FME to use the data created by the JPEG writer as an attachment to the outgoing email message. Click OK to close the dialog.
+
+The other fields can be set as follows:
+
+CC: blank
+
+From: blank
+
+Reply to: blank
+
+Subject: Your Image Order is Attached
+
+Message: Please find attached the image you requested.
