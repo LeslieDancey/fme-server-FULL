@@ -39,3 +39,11 @@ New for FME2015 is the ability to choose whether to watch for the creation of a 
 </tr>
 </table>
 
+Because FME Server resource folders can be accessed through the file system, it’s possible to put new files into a folder directly, rather than having to upload them via the Web User Interface.
+
+As usual, the notification will be passed into a workspace through a Reader, often a plain text Reader. The result will be a notification that a new (or updated) file exists, with the name of that file:
+
+If the filename is already known then the workspace could just read from it directly (it would also need a textfile Reader to accept the notification, even if the content is not used) or it can extract the file name using a JSON transformer and read content from the file using a FeatureReader transformer:
+
+For an example of using the Directory Watch tool, see the exercise in Chapter 5.
+
