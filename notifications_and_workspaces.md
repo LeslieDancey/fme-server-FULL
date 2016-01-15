@@ -457,3 +457,26 @@ In this case, when the workspace runs to completion it will trigger the RoadCond
 If the workspace fails to complete, it will trigger the WorkspaceFail topic.
 
 Either way, the outgoing message is set to be output via a TextLine Writer defined in the workspace.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Ms. Analyst says…</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“Four Topics are pre-installed with FME Server to handle
+workspace notifications. There are two topics for the Job
+Submitter Service (one for success, one for failure) and two for the
+Data Download Service (again, one for success, one for failure).
+These topics are triggered automatically by FME Server so a
+system administrator – for example – could subscribe to these
+topics to receive notifications from all workspaces”
+</span>
+</td>
+</tr>
+</table>
