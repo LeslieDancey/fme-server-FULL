@@ -41,7 +41,7 @@
    * [The Notification Service](the_notification_service.md)
    * [An Introduction to Email Notifications](an_introduction_to_email_notifications.md)
    * [Notifications and Workspaces](notifications_and_workspaces.md)
-   * Notifications Protocols
+   * [Notifications Protocols](notifications_protocols.md)
    * Message Streaming
    * Troubleshooting for Administrators
    * Module Review
