@@ -714,3 +714,5 @@ Reply to: blank
 Subject: Your Image Order is Attached
 
 Message: Please find attached the image you requested.
+
+Note that the blank parameters will come from the Email Subscription we set up in Step 1
