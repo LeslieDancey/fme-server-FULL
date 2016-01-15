@@ -440,3 +440,20 @@ For the purposes of FME notifications, the content of a workspace publication ca
 For example, here a workspace constructs a plain-text weather (lightning) alert using an AttributeCreator:
 
 Now the message attribute is connected to a Text File Writer in order to provide a means for publishing the outgoing message.
+
+**Registering a Workspace**
+
+Setting up a workspace to communicate notifications is achieved when the workspace is published to FME Server.
+
+Notifications are sent once the workspace is complete. The way in which the workspace is run is not important. Notifications can be sent for workspaces run using the Job Submitter Service, or the Data Download Service, or any other service.
+
+In other words, a workspace that sends notifications doesn’t need to be published to the Notification service; it should be published to the service under which it is to be run. Under the properties for that service will be parameters for setting the notification.
+
+In this example the author is publishing a workspace to the Job Submitter service and has opened the properties dialog for that service. There are two parameters for controlling the topics – one for success and one for failure – and a parameter for specifying the Writer to use.
+
+Having two Topic parameters is useful because different notifications can be sent depending on whether the workspace succeeds or fails.
+
+In this case, when the workspace runs to completion it will trigger the RoadConditions_Out topic.
+If the workspace fails to complete, it will trigger the WorkspaceFail topic.
+
+Either way, the outgoing message is set to be output via a TextLine Writer defined in the workspace.
