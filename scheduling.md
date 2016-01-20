@@ -25,3 +25,13 @@ There is also a parameter for deciding whether the schedule will be enabled stra
 The next few parameters concentrate on the workspace to be run.
 
 Once a workspace is selected there will be a short pause while FME retrieves information about the workspace. It will then expose any published parameters that exist in the workspace:
+
+The key parameters, of course, are for setting the actual schedule. Here the workspace is set to run every week starting on the 27th February at 2:00am
+
+There are also optional parameters for notification topics to trigger on completion of the scheduled task. These could be used to inform an administrator of the success or failure of the translation.
+
+Finally there are options to control job priority, job routing (which engine it should use) and job expiry (for jobs that are time-sensitive and would be no longer useful if held back past a certain time by higher priority tasks).
+
+Once the parameters are set for a scheduled task, it is added to the main Scheduling interface.
+
+Notice that there are a number of pre-defined jobs, automatically installed with FME Server for the purpose of backing-up and maintaining various components.
