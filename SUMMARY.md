@@ -49,4 +49,5 @@
    * Automation with FME Server
    * Scheduling
    * Automated Data Processing
+   * Workflow Management
 
