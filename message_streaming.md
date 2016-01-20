@@ -125,3 +125,46 @@ Locate the published parameter server_url in the Navigator window.
 Double-click the parameter to open it for editing and replace the host with your own FME Server host name and port. It will need a “ws” prefix to denote the WebSockets protocol.
 
 If you are working on the same machine as your FME Server you can use localhost for example: ws://localhost:7078/websocket
+
+**3. Examine the WebSocketReceiver and WebSocketSender Transformers**
+
+Open the parameters dialog for the WebSocketReceiver transformer.
+
+Notice that the Server URL is being obtained from the published parameter you just updated.
+
+Click the […] button to open the Connection Preamble parameter.
+
+What this means is that the transformer will make a connection to the specified FME Server and listen for features coming through a WebSocket stream called “points”.
+
+If you open the parameters for the WebSocketSender transformer, you’ll see it sends features back using a stream id called “disp_pnts”.
+
+The data being sent back through the WebSocket channel is the amended lat/long coordinates of the feature being processed.
+
+**4. Start the Workspace**
+
+Run the workspace and notice the initial connection messages printed to the log window. Also notice that the workspace keeps running, waiting for messages via the WebSocket stream it is listening to.
+
+**5. Edit the Web Map Application**
+
+In order to test this setup, a basic web mapping application has been provided in C:\FMEData2015\Resources\WebSockets
+
+Some minor updates will be needed before we can use this. In a text editor open the main HTML file C:\FMEData2015\Resources\WebSockets\www\index.html
+
+Find the two lines below which define the host WebSockets connections for the application. If you are using localhost you can leave this as is, otherwise replace localhost with your own hostname.
+
+var sendconn = new WebSocket('ws://localhost:7078/websocket');
+var rcvconn = new WebSocket('ws://localhost:7078/websocket');
+
+Now find the block of code starting with the comment
+
+/*** connect to server input stream ***/
+
+Notice that the web application is sending points to FME Server using the stream id “points” – the same one that the workspace is currently listening to.
+
+connmsg = '{ ws_op : "open", ws_stream_id : "points" }';
+
+If you look you’ll also find a block of code that listens for data using the stream id “disp_pnts”
+
+connmsg = '{ ws_op : "open", ws_stream_id : "disp_pnts" }';
+
+Save the file index.html if you have made any edits.
