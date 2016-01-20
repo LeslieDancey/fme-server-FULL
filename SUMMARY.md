@@ -46,4 +46,5 @@
    * [Troubleshooting for Administrators](troubleshooting_for_administrators4.md)
    * [Module Review](module_review4.md)
 * [Automation with FME Server](automation_with_fme_server.md)
+   * Automation with FME Server
 
