@@ -168,3 +168,16 @@ If you look you’ll also find a block of code that listens for data using the s
 connmsg = '{ ws_op : "open", ws_stream_id : "disp_pnts" }';
 
 Save the file index.html if you have made any edits.
+
+**6. Run the Web Application**
+
+Open the index file that we’ve just inspected in a web browser.
+As the Web map loads you will see two message sections logging messages sent to and from the FME Workspace:
+
+Click on any point of the map.
+
+Notice that immediately the point is recorded and returned with a random offset applied (it doesn’t matter what happens here, just the fact that something does).
+
+Also notice that messages to and from the workspace are being logged.
+If you switch back to the workspace you’ll notice that not only is it still running, but a feature was logged as it was received via the WebSocketReceiver, displaced and transmitted out via the
+WebSocketSender.
