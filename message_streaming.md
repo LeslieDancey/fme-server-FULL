@@ -181,3 +181,41 @@ Notice that immediately the point is recorded and returned with a random offset 
 Also notice that messages to and from the workspace are being logged.
 If you switch back to the workspace you’ll notice that not only is it still running, but a feature was logged as it was received via the WebSocketReceiver, displaced and transmitted out via the
 WebSocketSender.
+
+**7. Publish the Workspace to FME Server**
+
+Up to now we’ve just run the workspace on FME Desktop, but it can also be run on FME Server.
+
+Stop the workspace in FME Desktop if it is still running and publish the workspace to FME Server into the Training repository. Simply register the workspace with the Job Submitter Service.
+
+**8. Run the WebSockets Workflow on FME Server**
+
+In the Web User Interface browse to the workspace in its repository, choose the Job Submitter and click Run
+
+The workspace will keep running indefinitely and FME Server’s job recovery functionality will restart the job if it ever fails.
+
+Try placing a few more points on the web map application to confirm that points are being displaced. This time the process is being carried out by FME Server.
+
+Go back to the Web User Interface and click on the Manage menu > Jobs and then click the
+
+Running tab where you will see your workspace running.
+
+Click on the job and then on the Log tab. You’ll see the log of the workspace as it is running and can examine it to see your last few map clicks passing through the workspace as features.
+
+<table style="border-spacing: 0px">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-quote-left fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold;font-family:serif">Police Chief Webb-Mapp says …</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange">
+<span style="font-family:serif; font-style:italic; font-size:larger">
+“The ability to view a log file while the translation is still in progress
+is a new feature of FME Server 2014”
+</span>
+</td>
+</tr>
+</table>
