@@ -43,6 +43,6 @@
    * [Notifications and Workspaces](notifications_and_workspaces.md)
    * [Notifications Protocols](notifications_protocols.md)
    * [Message Streaming](message_streaming.md)
-   * Troubleshooting for Administrators
+   * [Troubleshooting for Administrators](troubleshooting_for_administrators4.md)
    * Module Review
 
