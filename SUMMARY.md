@@ -45,4 +45,5 @@
    * [Message Streaming](message_streaming.md)
    * [Troubleshooting for Administrators](troubleshooting_for_administrators4.md)
    * [Module Review](module_review4.md)
+* Automation with FME Server
 
