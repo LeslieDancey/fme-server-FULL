@@ -219,3 +219,62 @@ is a new feature of FME Server 2014”
 </td>
 </tr>
 </table>
+
+**Advanced Tasks (Exercise 4f)**
+
+The use of a continuously running workspace has advantages and disadvantages.
+
+On the plus side, it can process many messages – several thousand – per second. However, it does take up an FME Server engine on a continuous basis too.
+
+If the same workflow was configured to run using the Notification Service it would not use an FME Engine at all times; however it would not be suitable for systems with multiple messages per second.
+
+As an optional task, let’s try configuring the system to use notifications instead if WebSockets.
+
+**1. Cancel the Job from the Above Exercise**
+
+Under Jobs > Running in the Web User Interface, put a checkmark next to the job and press the Cancel button. This will stop the existing job from running, as we no longer need it.
+
+**2. Add a Topic**
+
+In the Notification part of the Web User Interface, add a Topic named points.
+
+**3. Add a Web Sockets Publication**
+
+Now add a new Publication with the following settings:
+
+Publication Name MapPoints
+Topics to Publish To points
+Protocol WebSocket
+Target Url ws://localhost:7078/websocket
+(or use your own host)
+Stream ID sample_stream_in
+
+**4. Edit the Web Map Application**
+
+In a text editor open the file 
+
+C:\FMEData2015\Resources\WebSockets\www\index.html
+
+Comment out the default send connection message (line 86) and uncomment the one below:
+
+//connmsg = '{ ws_op : "open", ws_stream_id : "points" }';
+connmsg = '{ ws_op : "open", ws_stream_id : "sample_stream_in" }';
+Save the updated file.
+
+**5. Open the Advanced Workspace**
+
+Open the workspace Exercise4e-Begin-WebSockets-Advanced.fmw and edit the server_url parameter if necessary.
+
+Publish this workspace to FME Server and register it with the Notification Service.
+
+In the service settings set the workspace to subscribe to the topic points and ensure the Notification Reader is set to the TEXTLINE reader.
+
+Click OK to close the dialog and Publish to finish publishing the workspace.
+
+**6. Use the Web Application in Notification Mode**
+
+Reload the web application in your browser or simply reopen the file index.html.
+
+Click some points on the map to ensure they are being processed and offset.
+
+Examine the Jobs history in Web User Interface. You will see a job is run each time you click.
