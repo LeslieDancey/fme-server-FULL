@@ -108,3 +108,20 @@ C:\FMEData2015\Workspaces\ServerAuthoring\Exercise4e-­‐Begin-­‐Advanced.fm
 </tr>
 
 </table>
+
+This exercise uses FME Server’s WebSockets service and WebSockets transformers to power a Web Map application. The method shown here is suitable for high frequency messaging in excess of 1 message per second.
+
+**1. Open the Starting Workspace**
+
+In FME Workbench open the starting workspace Exercise4e-Begin.fmw
+
+Notice that it contains two WebSocket transformers – one for receiving and one for sending. The workspace will listen for information coming through the WebSockets channel. Incoming data will be processed with an offset in its coordinates, and then sent back. The workspace will run continuously, processing each incoming message, until stopped manually.
+
+**2. Update Server Name**
+
+The first task is to update the hostname for the server to match the one you are using.
+
+Locate the published parameter server_url in the Navigator window.
+Double-click the parameter to open it for editing and replace the host with your own FME Server host name and port. It will need a “ws” prefix to denote the WebSockets protocol.
+
+If you are working on the same machine as your FME Server you can use localhost for example: ws://localhost:7078/websocket
