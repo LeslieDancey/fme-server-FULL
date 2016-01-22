@@ -251,3 +251,27 @@ Finally, set the destination directory to be the Temp resources folder. To do th
 Once more, click Finish to close the main transformer parameters dialog.
 
 Then add some Logger transformers again, so we can keep track of the results.
+
+**10. Publish Workspace**
+
+Publish the workspace back to FME Server, again into the workflow_management repository and registered with the Job Submitter service.
+
+In fact, since no service changes need to be made, you can simply use the Republish button.
+
+**11. Run Workspace**
+
+Run the workspace in the Web Interface, as in step 7. Remember to assign the uploaded data to the two published parameters.
+
+**12. View Log**
+
+Once the workspace completes, click the button View Log 
+
+Again you should be able to find the same success message, indicating all three child workspaces have run to completion.
+
+**13. View Data**
+
+Once complete, click Resources on the sidebar menu and expand the Temp directory.
+
+You will see the five PNG files that were created by this workflow.
+
+You can now download these files and access them via the REST API.
