@@ -211,3 +211,25 @@ Then, for the voting parameter, choose the newly uploaded dataset *voting_downto
 For the properties parameter choose *parcels_downtown.zip*
 
 Click Run Workspace to run the workspace.
+
+**8. View Log**
+
+Once the workspace completes click the View Log button.
+Scroll down the log until you see the logged feature.
+If you see the Feature Type of the logged feature reported as FMEServerJobSubmitter_Succeeded_LOGGED then you know the child workspace was successfully triggered.
+
+**9. Chain Workspaces – Part 1**
+
+Now we can start to chain multiple workspaces together.
+
+Go back to FME Workbench where the control workspace is open. Delete the Logger transformers and then add a second FMEServerJobSubmitter transformer. It should be connected to the Succeeded port of the first FMEServerJobSubmitter transformer.
+
+Open the parameters dialog of the newly added FMEServerJobSubmitter and enter the usual connection details. This transformer will be used to execute the second workspace of the three, so select Exercise5c-Begin-Data-Process.fmw as the workspace to run.
+
+Again, Set Wait for Server Job to Complete to Yes.
+
+This is where it gets interesting. One of the attributes added to the features output from an FMEServerJobSubmitter transformer records the path to the dataset written by that workspace.
+
+In other words, the first child process returned information about where it wrote its output data, and we can use that information to provide the input for the second child process.
+
+In the Source SpatiaLite Database File(s) parameter, click the drop-down arrow. Select Attribute Value > output_datasets{}.path
