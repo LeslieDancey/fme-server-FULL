@@ -56,4 +56,5 @@
    * Product Information and Resources
    * Community Information and Resources
    * Course Feedback
+   * Certificates
 
