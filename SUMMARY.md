@@ -53,4 +53,5 @@
    * [Troubleshooting for Administrators](troubleshooting_for_administrators5.md)
    * [Module Review](module_review5.md)
 * Course Wrap-Up
+   * Product Information and Resources
 
