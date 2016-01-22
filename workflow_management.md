@@ -134,3 +134,49 @@ Start with an empty canvas in Workbench and add a Creator transformer. A Creator
 Now add an FMEServerJobSubmitter transformer after the Creator: 
 
 Save the workspace as workflow_management_controller.fmw
+
+**3. Add Published Parameters**
+
+Published Parameters are how information can be passed from a master workspace to a child workspace. The child workspace has existing parameters and new ones can be created in the master in order to receive information that is to be passed in.
+
+The first child workspace (for loading data) has two Readers to read two input datasets; therefore we can specify the source data using published parameters.
+
+In the Navigator window locate the section named Published Parameters.
+Right-click on Published Parameters and choose Add Parameter.
+Create two new parameters:
+
+A. Type: Filename (Existing)
+
+Name: voting
+
+Prompt: voting:
+
+Configuration: Description: shapefile,
+
+Filter: *.shp
+
+B. Type: Filename (Existing)
+
+Name: properties
+
+Prompt: properties:
+
+Configuration: Description: shapefile,
+
+Filter: *.shp
+
+**4. Set FMEServerJobSubmitter Parameters**
+
+Open the parameters dialog for the FMEServerJobSubmitter. Here we can define the workspace that is to be run by this master process.
+
+Enter the usual connection parameters. 
+
+For the workspace to run choose the workflow_management repository and from there select the workspace Exercise5c-Begin-Data-Load.fmw.
+
+Click Next to continue.
+
+Set Wait for Server Job to Complete to Yes.
+
+For the first published parameter, click the drop-down arrow (to the right) and choose User Parameter > voting
+
+For the second, click the drop-down arrow and choose User Parameter > properties Click Finish to close the parameters dialog.
