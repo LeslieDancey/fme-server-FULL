@@ -161,3 +161,4 @@ We’re only testing this so there’s no need to set up a repeating one.
 **4. Accept Schedule**
 
 Click OK to create the schedule, which should run immediately. The job will fail – as will be confirmed on the Jobs page. You should shortly afterwards receive an email reporting the error.
+
