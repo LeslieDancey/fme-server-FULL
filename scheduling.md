@@ -35,3 +35,52 @@ Finally there are options to control job priority, job routing (which engine it 
 Once the parameters are set for a scheduled task, it is added to the main Scheduling interface.
 
 Notice that there are a number of pre-defined jobs, automatically installed with FME Server for the purpose of backing-up and maintaining various components.
+
+
+<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 5A </span>
+</td>
+<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
+<span style="color:white;font-size:x-large;font-weight: bold">Scheduling</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Scenario</td>
+<td style="border: 1px solid darkorange">City of Austin</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
+<td style="border: 1px solid darkorange">Apartment Data</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
+<td style="border: 1px solid darkorange">Web
+Map
+Application
+with
+WebSockets</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
+<td style="border: 1px solid darkorange">Automated
+Scheduling</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Starting Workspace</td>
+<td style="border: 1px solid darkorange">n/a</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Finished Workspace</td>
+<td style="border: 1px solid darkorange">n/a</td>
+</tr>
+
+</table>
