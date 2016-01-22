@@ -179,4 +179,6 @@ Set Wait for Server Job to Complete to Yes.
 
 For the first published parameter, click the drop-down arrow (to the right) and choose User Parameter > voting
 
-For the second, click the drop-down arrow and choose User Parameter > properties Click Finish to close the parameters dialog.
+For the second, click the drop-down arrow and choose User Parameter > properties 
+
+Click Finish to close the parameters dialog.
