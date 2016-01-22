@@ -51,5 +51,5 @@
    * [Automated Data Processing](automated_data_processing.md)
    * [Workflow Management](workflow_management.md)
    * [Troubleshooting for Administrators](troubleshooting_for_administrators5.md)
-   * Module Review
+   * [Module Review](module_review5.md)
 
