@@ -52,3 +52,60 @@ instead of a Reader.”
 </tr>
 </table>
 
+<table style="border-spacing: 0px;border-collapse: collapse;font-family:serif">
+<tr>
+<td style="vertical-align:middle;background-color:darkorange;border: 2px solid darkorange">
+<i class="fa fa-cogs fa-lg fa-pull-left fa-fw" style="color:white;padding-right: 12px;vertical-align:text-top"></i>
+<span style="color:white;font-size:x-large;font-weight: bold">Exercise 5C </span>
+</td>
+<td style="border: 2px solid darkorange;background-color:darkorange;color:white">
+<span style="color:white;font-size:x-large;font-weight: bold">Workflow Management</span>
+</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Scenario</td>
+<td style="border: 1px solid darkorange">Airphoto
+Data
+Vendor</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Data</td>
+<td style="border: 1px solid darkorange">GeoTIFF
+Orthophotos</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Overall Goal</td>
+<td style="border: 1px solid darkorange">Chain
+Three
+Workspaces
+Together</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Demonstrates</td>
+<td style="border: 1px solid darkorange">Workflow
+Management</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Starting Workspace</td>
+<td style="border: 1px solid darkorange">C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Begin-­‐Data-­‐Load.fmw
+
+C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Begin-­‐Data-­‐Process.fmw
+
+C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Begin-­‐Data-­‐Rasterize.fmw</td>
+</tr>
+
+<tr>
+<td style="border: 1px solid darkorange; font-weight: bold">Finished Workspace</td>
+<td style="border: 1px solid darkorange">C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Complete-­‐Control1.fmw
+
+C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Complete-­‐Control2.fmw
+
+C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Complete-­‐Control3.fmw</td>
+</tr>
+
+</table>
