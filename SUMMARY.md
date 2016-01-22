@@ -57,4 +57,5 @@
    * Community Information and Resources
    * Course Feedback
    * Certificates
+   * Thank You
 
