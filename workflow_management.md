@@ -109,3 +109,28 @@ C:\FMEData2015\Workspaces\ServerAuthoring\Exercise5c-­‐Complete-­‐Control3
 </tr>
 
 </table>
+
+This example shows how to chain together 3 separate workspaces into a complete workflow. The
+workflow loads data, performs a join and then creates web map tiles in three separate steps.
+
+**1. Publish Workspaces**
+
+The three workspaces that are to be chained together already exist and need to be published to FME Server. So create a new repository called workflow_management and publish the following three workspaces:
+
+• Exercise5c-Begin-Data-Load.fmw
+
+• Exercise5c-Begin-Data-Process.fmw
+
+• Exercise5c-Begin-Data-Rasterize.fmw
+
+They can simply be published with no resources and registered only with the Job Submitter.
+
+**2. Create Control Workspace**
+
+Now we can create a control workspace to manage the three child workspaces.
+
+Start with an empty canvas in Workbench and add a Creator transformer. A Creator will simply create a single non-geometry feature that can be used to trigger the rest of the workspace.
+
+Now add an FMEServerJobSubmitter transformer after the Creator: 
+
+Save the workspace as workflow_management_controller.fmw
