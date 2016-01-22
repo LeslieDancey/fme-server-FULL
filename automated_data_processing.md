@@ -49,3 +49,23 @@ for Oracle, SQL Server, and PostGres/PostGIS.”
 </td>
 </tr>
 </table>
+
+**Web Automation Services**
+
+Web Automation Services are those such as IFTTT and Zapier, which tie together different webbased applications using conditional statements.
+
+Such services allow you to define a statement using a trigger (the  If part) and an action (That).
+
+For example, here is a pre-defined IFTTT “recipe” to send an email when congress is about to vote on a bill.
+
+Typically intended to support tools like Gmail, Dropbox, and Facebook; it’s also possible to connect FME Server into a workflow like this.
+
+For example, a Zapier “zap” looks like this:
+
+Here, whenever a tweet with a specific keyword and location is discovered, a workspace is run on FME Server.
+
+In this example the search term is for the word “earthquake” and the location is defined (not shown here) as within 50km of the city of Vancouver, BC.
+
+The FME workspace being run is called EarthquakeResponse.fmw and the Text File Reader within it is being fed the coordinates of the tweet:
+
+Now Zapier will check for such a tweet (by default every 15 minutes) and run the workspace on FME Server in response:
