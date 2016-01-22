@@ -233,3 +233,21 @@ This is where it gets interesting. One of the attributes added to the features o
 In other words, the first child process returned information about where it wrote its output data, and we can use that information to provide the input for the second child process.
 
 In the Source SpatiaLite Database File(s) parameter, click the drop-down arrow. Select Attribute Value > output_datasets{}.path
+
+Because this is a list attribute – i.e. there may be more than one value – you’ll be asked which value you want to use. It will be the first one; element 0
+
+So select 0 (if it isn’t already) click OK to close this dialog, and Finish to close the main dialog.
+
+**9. Chain Workspaces – Part 2**
+
+Now add a third FMEServerJobSubmitter transformer – again connected to the Succeeded port of the previous – in order to run the third child workspace.
+
+Again enter the connection properties and again choose the same repository as before. This time the workspace to select is Exercise5c-Begin-Data-Rasterize.fmw
+
+Again, set Wait for Server Job to Complete to Yes and set the source SpatialLite Database to use the output_dataset{}.path parameter (element 0).
+
+Finally, set the destination directory to be the Temp resources folder. To do this use $(FME_SHAREDRESOURCE_TEMP). Using a resources location allows the data to be accessed via the web interface and REST API.
+
+Once more, click Finish to close the main transformer parameters dialog.
+
+Then add some Logger transformers again, so we can keep track of the results.
