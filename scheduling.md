@@ -102,3 +102,55 @@ Click New on the schedules menu to start creating a new schedule.
 Enter a name for the schedule (something like ApartmentSchedule) and enter a name for a new category (like MySchedules)
 
 For the workspace to execute select the repository called Samples and in there select the workspace austinApartments.fmw
+
+**4. Set Schedule**
+
+For the schedule itself, use the following settings: Start date: Check Immediately in order to verify that the schedule works.
+
+Repeats: Interval Based.
+
+Repeat Unit: Minute
+
+Interval: 1
+
+End Date: Choose a date 5 minutes in the future.
+
+Be aware that times are in the 24-hour clock and are in the same time zone as the client.
+
+Click OK to create the schedule.
+
+**5. Check Results**
+
+Click on the Jobs menu entry and the Completed tab. You will see the results of the completed scheduled jobs occurring at one minute intervals.
+
+**Advanced Task**
+
+As an advanced (and optional) task, why not try to issue a notification for when a workspace fails.
+
+**1. Add Topic**
+
+Under the Notification dialogs add a new Topic called schedule_notification
+
+**2. Add Subscription**
+
+Now add a new Subscription called schedule_notification_email. It should be an email protocol and it should be subscribed to the schedule_notification topic
+
+Use the same email (SMTP) details as you used in the Chapter 4 exercises. The other fields should be as follows:
+
+Email To: <Your own email address>
+
+Email CC: <Leave empty>
+
+Email Subject: Schedule Failed
+
+Email Template: <Leave empty>
+
+**3. Create Schedule**
+
+Return to the Schedules dialogs. Create a new schedule with a name and category of your choosing. Select the Samples repository and choose the workspace easyTranslator.fmw
+
+When you select a workspace with published parameters – like this one – they will now appear in the Schedules dialog. They can therefore be set at this time.
+
+To force this workspace to fail, we’ll deliberately set an incorrect parameter. Locate the Source File parameter and click Specify A Location. In the location field enter g:\invalidpath.shp. As this file does not exist it will cause the workspace to fail when run.
+
+Under the Notification settings Post to Topic(s) on Failure select the topic schedule_notification
