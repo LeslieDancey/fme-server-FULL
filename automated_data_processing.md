@@ -185,3 +185,25 @@ fns_type
 
 dirwatch_publisher_content
 
+**6. Format the File Name for Joining**
+
+The attribute dirwatch_publisher_content now looks something like this:
+
+ENTRY_CREATE C:\apps\FMEServer\Data\\Orthophotos\10-11-JK.tif\n
+
+We need to format this attribute in order to extract the file path.
+Add a SubstringExtractor transformer, to the Tester Passed port 
+
+Open the parameters dialog and set the following:
+
+Source Attribute: dirwatch_publisher_content
+
+Start Index: 13
+
+End Index: -1
+
+Result Attribute: Path
+
+**7. Read the New File**
+
+Connect the SubstringExtractor transformer to the FeatureReader that already existed in the workspace.
