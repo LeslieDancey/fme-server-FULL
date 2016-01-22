@@ -147,3 +147,41 @@ Directory to Watch: Browse Resources \Orthophotos and check it
 
 Filter: Create (remove Modify and Delete)
 
+**3. Open Workspace**
+
+In FME Workbench open the starting workspace. This workspace will read the raster data using a FeatureReader transformer. It will then write the data out. Notice the workspace also creates an email to send as an output notification.
+
+**4. Add a Text File (TEXTLINE) Reader**
+
+Select Readers >Add Reader from the menubar to add a Text File Reader. This Reader is necessary to receive the incoming information from the Directory Watcher. Use the settings:
+
+Reader Format: Text File
+
+Reader Dataset: C:\FMEData2015\Resources\NewFile.json
+
+Parameters:
+
+Read Whole File at Once: Yes
+
+Click OK and then OK again to add the reader. Don’t connect it to anything in the workspace.
+
+This JSON file is provided as example of what the Notification Service sends to a workspace when the Director Watcher picks up a change to the directory. You can examine the JSON file in a text editor to see how the message is structured.
+
+**5. Add JSONFlattener**
+
+Add a JSONFlattener transformer and connect it to the Text File feature type.
+
+Edit the properties of the transformer as follows:
+
+JSON Attribute: text_line_data
+
+Recursively Flatten Objects/Arrays: Yes
+
+Prefix New Attribute Names With: <Leave blank>
+
+Attributes to Expose: Type in the following two entries onto two lines:
+
+fns_type
+
+dirwatch_publisher_content
+
