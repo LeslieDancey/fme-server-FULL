@@ -48,7 +48,7 @@
 * [Automation with FME Server](automation_with_fme_server.md)
    * [Automation with FME Server](automation_with_fme_server5.md)
    * [Scheduling](scheduling.md)
-   * Automated Data Processing
+   * [Automated Data Processing](automated_data_processing.md)
    * Workflow Management
    * Troubleshooting for Administrators
    * Module Review
