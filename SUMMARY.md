@@ -50,6 +50,6 @@
    * [Scheduling](scheduling.md)
    * [Automated Data Processing](automated_data_processing.md)
    * [Workflow Management](workflow_management.md)
-   * Troubleshooting for Administrators
+   * [Troubleshooting for Administrators](troubleshooting_for_administrators5.md)
    * Module Review
 
