@@ -153,4 +153,11 @@ When you select a workspace with published parameters – like this one – they
 
 To force this workspace to fail, we’ll deliberately set an incorrect parameter. Locate the Source File parameter and click Specify A Location. In the location field enter g:\invalidpath.shp. As this file does not exist it will cause the workspace to fail when run.
 
-Under the Notification settings Post to Topic(s) on Failure select the topic schedule_notification
+Under the Notification settings Post to Topic(s) on Failure select the topic schedule_notification.
+
+For the schedule itself, set the Start Date to Immediately and the Repeat to Only Occur Once.
+We’re only testing this so there’s no need to set up a repeating one.
+
+**4. Accept Schedule**
+
+Click OK to create the schedule, which should run immediately. The job will fail – as will be confirmed on the Jobs page. You should shortly afterwards receive an email reporting the error.
