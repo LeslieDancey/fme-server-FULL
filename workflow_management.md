@@ -182,3 +182,32 @@ For the first published parameter, click the drop-down arrow (to the right) and 
 For the second, click the drop-down arrow and choose User Parameter > properties 
 
 Click Finish to close the parameters dialog.
+
+**5. Add Logger Transformers**
+
+Right click the FMEServerJobSubmitter and select Connect Loggers.
+
+This will add Logger transformers to the workspace so we will know the status of the completed jobs.
+
+**6. Publish the Workspace**
+
+Publish the workspace to FME Server, into the workflow_management repository and registered with the job_submitter service.
+
+**7. Run Workspace**
+
+Locate the workspace in its repository in the web interface. Select Job Submitter
+
+Use the File Upload “Add Files” button to upload the files:
+
+C:\FMEData2015\Resources\workflow_management\parcels_downtown.zip and
+
+C:\FMEData2015\Resources\workflow_management\voting_downtown.zip files
+
+For the two published parameters, first click
+*From Recently Uploaded Files.*
+
+Then, for the voting parameter, choose the newly uploaded dataset *voting_downtown.zip*
+
+For the properties parameter choose *parcels_downtown.zip*
+
+Click Run Workspace to run the workspace.
