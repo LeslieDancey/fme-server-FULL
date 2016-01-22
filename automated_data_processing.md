@@ -220,4 +220,29 @@ Change the subject and message fields as well so they tell you this is new data 
 **10. Publish the Workspace (Step 1)**
 
 Start to publish the workspace to FME Server. As usual use the same connection parameters and select the Training repository.
+
 Uncheck the Upload Data Files checkbox to ensure that no files will be uploaded to the repository and click OK and Next.
+
+**11. Publish the Workspace (Step 2)**
+
+In the Services dialog check the Notification Service. Open the Service Properties dialog and choose the Topic NewData that was created earlier.
+
+Make sure the Notification Reader is set to your NewFile[TEXTLINE] Reader only.
+
+In the same Edit Service Properties dialog expand the Notify on Job Completion settings and set Topics to Publish (Success) to the sendemail topic created in a previous exercise.
+
+The Notification Writer should be set to your Email[TEXTLINE] writer.
+
+Leave Topics to Publish (Failure) blank, but notice this is where you could handle a failure in the workspace if you needed to.
+
+Click OK and Publish to complete the wizard.
+
+**12. Add some New Data**
+
+Use the Web User interface to add a new orthophoto file to the Resources folder.
+
+To do so, click the Manage Menu > Resources and expand the Data > Orthophotos folder. Browse to the folder C:\FMEData2015\Data\Orthophotos and select another GeoTIFF file for upload, for example 08-09-PQ.tif
+
+After a few minutes you should receive an email with the resampled image attached.
+
+**Congratulations!** You have created a solution that automatically processes new data files and alerts users to their presence through an email notification.
