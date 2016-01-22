@@ -207,3 +207,17 @@ Result Attribute: Path
 **7. Read the New File**
 
 Connect the SubstringExtractor transformer to the FeatureReader that already existed in the workspace.
+
+**8. Set FeatureReader Parameters**
+
+Open the FeatureReader parameters dialog. Ensure that the Reader Format is set to GeoTIFF and that the Dataset File parameter is set to the value of the Path attribute:
+
+**9. Set the Email Address**
+
+In this case the emails will only go to you or another manager so you can set a fixed email address. Open the parameters dialog of the FMEServerEmailGenerator and enter your address in the To: field.
+Change the subject and message fields as well so they tell you this is new data and not a data order.
+
+**10. Publish the Workspace (Step 1)**
+
+Start to publish the workspace to FME Server. As usual use the same connection parameters and select the Training repository.
+Uncheck the Upload Data Files checkbox to ensure that no files will be uploaded to the repository and click OK and Next.
