@@ -126,3 +126,24 @@ Scheduling</td>
 </tr>
 
 </table>
+
+As a member of the Airphoto Data team, you would like to have FME start processing data once an update becomes available, and an email to be sent to alert you of this. Availability of new data will be denoted by new files in a folder. The Directory Watcher protocol can be used to do this.
+
+**1. Create New Topic**
+
+In the Notifications dialog create a new Topic called NewData.
+
+**2. Create a New Publication**
+
+Now create a new Publication. Use the following settings:
+
+Publication Name: New Data Watcher 
+
+Topic to Publish to: NewData (the topic you created in step 1)
+
+Protocol: Directory Watch
+
+Directory to Watch: Browse Resources \Orthophotos and check it
+
+Filter: Create (remove Modify and Delete)
+
