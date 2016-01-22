@@ -55,4 +55,5 @@
 * Course Wrap-Up
    * Product Information and Resources
    * Community Information and Resources
+   * Course Feedback
 
