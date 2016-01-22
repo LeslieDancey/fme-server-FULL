@@ -54,4 +54,5 @@
    * [Module Review](module_review5.md)
 * Course Wrap-Up
    * Product Information and Resources
+   * Community Information and Resources
 
