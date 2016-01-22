@@ -84,3 +84,21 @@ Scheduling</td>
 </tr>
 
 </table>
+
+This is a simple exercise to schedule a workspace to translate data.
+
+**1. Open Web User Interface**
+
+Open the FME Server Web User Interface and log in.
+
+**2. Select Schedules**
+
+Select Schedule Workspace from the homepage.
+
+**3. Create Schedule**
+
+Click New on the schedules menu to start creating a new schedule.
+
+Enter a name for the schedule (something like ApartmentSchedule) and enter a name for a new category (like MySchedules)
+
+For the workspace to execute select the repository called Samples and in there select the workspace austinApartments.fmw
